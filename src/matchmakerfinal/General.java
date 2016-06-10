@@ -193,7 +193,6 @@ public class General extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-         System.out.print(LFGrade[0]+"," + LFGrade[1]+"," + LFGrade[2]+ ","+ LFGrade[3]);
         if (checkNames(firstName) && checkNames(lastName)){
              JOptionPane.showMessageDialog(this, "Please ensure the name fields are filled in correctly", "Names", JOptionPane.PLAIN_MESSAGE);
         }
@@ -215,7 +214,7 @@ public class General extends javax.swing.JFrame {
         else{
             String gradeInterest = "";
             for (int i = 0; i < 3; i ++){
-                if ("".equals(LFGrade)){
+                if ("".equals(LFGrade[i])){
                     
                 }
                 else {
