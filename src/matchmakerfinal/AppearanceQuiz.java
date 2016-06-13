@@ -10,23 +10,38 @@ package matchmakerfinal;
  * @author Braedon
  */
 public class AppearanceQuiz extends javax.swing.JFrame {
-int bodyTypePref;
-int bodyTypePersonal;
-int hairColPref;
-int hairColPersonal;
-int heightPref;
-int heightPersonal;
-int backgroundPersonal;
-int backgroundPref;
-int eyeColPersonal;
-int eyeColPref;
 
+    int bodyTypePref;
+    int bodyTypePersonal;
+    int hairColPref;
+    int hairColPersonal;
+    int heightPref;
+    int heightPersonal;
+    int backgroundPersonal;
+    int backgroundPref;
+    int eyeColPersonal;
+    int eyeColPref;
 
     /**
      * Creates new form AppearanceQuiz
      */
     public AppearanceQuiz() {
         initComponents();
+        bodyType1.setOpaque(false);
+        bodyType1.setContentAreaFilled(false);
+        bodyType1.setBorderPainted(false);
+        bodyType2.setOpaque(false);
+        bodyType2.setContentAreaFilled(false);
+        bodyType2.setBorderPainted(false);
+        bodyType3.setOpaque(false);
+        bodyType3.setContentAreaFilled(false);
+        bodyType3.setBorderPainted(false);
+        bodyType4.setOpaque(false);
+        bodyType4.setContentAreaFilled(false);
+        bodyType4.setBorderPainted(false);
+        bodyType5.setOpaque(false);
+        bodyType5.setContentAreaFilled(false);
+        bodyType5.setBorderPainted(false);
     }
 
     /**
@@ -48,6 +63,11 @@ int eyeColPref;
         Height5 = new javax.swing.JButton();
         Height4 = new javax.swing.JButton();
         Height3 = new javax.swing.JButton();
+        hairColour5 = new javax.swing.JButton();
+        hairColour4 = new javax.swing.JButton();
+        hairColour2 = new javax.swing.JButton();
+        hairColour1 = new javax.swing.JButton();
+        hairColour3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -131,6 +151,46 @@ int eyeColPref;
             }
         });
 
+        hairColour5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColour5.setText("Hair Colour 5");
+        hairColour5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColour5ActionPerformed(evt);
+            }
+        });
+
+        hairColour4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColour4.setText("Hair Colour 4");
+        hairColour4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColour4ActionPerformed(evt);
+            }
+        });
+
+        hairColour2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColour2.setText("Hair Colour 2");
+        hairColour2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColour2ActionPerformed(evt);
+            }
+        });
+
+        hairColour1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColour1.setText("Hair Colour 1");
+        hairColour1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColour1ActionPerformed(evt);
+            }
+        });
+
+        hairColour3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColour3.setText("Hair Colour 3");
+        hairColour3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColour3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -157,8 +217,18 @@ int eyeColPref;
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Height4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Height5)))
-                .addContainerGap(391, Short.MAX_VALUE))
+                        .addComponent(Height5))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(hairColour1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(hairColour2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(hairColour3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(hairColour4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(hairColour5)))
+                .addContainerGap(371, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -177,51 +247,79 @@ int eyeColPref;
                     .addComponent(Height3)
                     .addComponent(Height4)
                     .addComponent(Height5))
-                .addContainerGap(460, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(hairColour1)
+                    .addComponent(hairColour2)
+                    .addComponent(hairColour3)
+                    .addComponent(hairColour4)
+                    .addComponent(hairColour5))
+                .addContainerGap(435, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void bodyType1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyType1ActionPerformed
-    bodyTypePersonal = 1;
+        bodyTypePersonal = 1;
+        System.out.println("it works!!!");
     }//GEN-LAST:event_bodyType1ActionPerformed
 
     private void bodyType4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyType4ActionPerformed
-    bodyTypePersonal = 4;
+        bodyTypePersonal = 4;
     }//GEN-LAST:event_bodyType4ActionPerformed
 
     private void bodyType2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyType2ActionPerformed
-    bodyTypePersonal = 2;
+        bodyTypePersonal = 2;
     }//GEN-LAST:event_bodyType2ActionPerformed
 
     private void bodyType3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyType3ActionPerformed
-    bodyTypePersonal = 3;
+        bodyTypePersonal = 3;
     }//GEN-LAST:event_bodyType3ActionPerformed
 
     private void bodyType5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyType5ActionPerformed
-    bodyTypePersonal = 5;
+        bodyTypePersonal = 5;
     }//GEN-LAST:event_bodyType5ActionPerformed
 
     private void Height2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Height2ActionPerformed
-    heightPersonal = 2;
+        heightPersonal = 2;
     }//GEN-LAST:event_Height2ActionPerformed
 
     private void Height1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Height1ActionPerformed
-    heightPersonal = 1;
+        heightPersonal = 1;
     }//GEN-LAST:event_Height1ActionPerformed
 
     private void Height5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Height5ActionPerformed
-    heightPersonal = 5;
+        heightPersonal = 5;
     }//GEN-LAST:event_Height5ActionPerformed
 
     private void Height4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Height4ActionPerformed
-    heightPersonal = 4;
+        heightPersonal = 4;
     }//GEN-LAST:event_Height4ActionPerformed
 
     private void Height3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Height3ActionPerformed
-    heightPersonal = 3;
+        heightPersonal = 3;
     }//GEN-LAST:event_Height3ActionPerformed
+
+    private void hairColour5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour5ActionPerformed
+        hairColPersonal = 5;
+    }//GEN-LAST:event_hairColour5ActionPerformed
+
+    private void hairColour4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour4ActionPerformed
+        hairColPersonal = 4;
+    }//GEN-LAST:event_hairColour4ActionPerformed
+
+    private void hairColour2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour2ActionPerformed
+        hairColPersonal = 2;
+    }//GEN-LAST:event_hairColour2ActionPerformed
+
+    private void hairColour1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour1ActionPerformed
+        hairColPersonal = 1;
+    }//GEN-LAST:event_hairColour1ActionPerformed
+
+    private void hairColour3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour3ActionPerformed
+        hairColPersonal = 3;
+    }//GEN-LAST:event_hairColour3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -269,5 +367,10 @@ int eyeColPref;
     private javax.swing.JButton bodyType3;
     private javax.swing.JButton bodyType4;
     private javax.swing.JButton bodyType5;
+    private javax.swing.JButton hairColour1;
+    private javax.swing.JButton hairColour2;
+    private javax.swing.JButton hairColour3;
+    private javax.swing.JButton hairColour4;
+    private javax.swing.JButton hairColour5;
     // End of variables declaration//GEN-END:variables
 }
