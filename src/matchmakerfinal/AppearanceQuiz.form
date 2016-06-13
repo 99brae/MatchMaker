@@ -49,15 +49,15 @@
                       <Component id="Height5" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="hairColour1" min="-2" max="-2" attributes="0"/>
+                      <Component id="hairColourPersonal1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="hairColour2" min="-2" max="-2" attributes="0"/>
+                      <Component id="hairColourPersonal2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="hairColour3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hairColourPersonal3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="hairColour4" min="-2" max="-2" attributes="0"/>
+                      <Component id="hairColourPersonal4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="hairColour5" min="-2" max="-2" attributes="0"/>
+                      <Component id="hairColourPersonal5" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="371" max="32767" attributes="0"/>
@@ -85,11 +85,11 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="hairColour1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="hairColour2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="hairColour3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="hairColour4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="hairColour5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="hairColourPersonal1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="hairColourPersonal2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="hairColourPersonal3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="hairColourPersonal4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="hairColourPersonal5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="435" max="32767" attributes="0"/>
           </Group>
@@ -207,7 +207,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Height3ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColour5">
+    <Component class="javax.swing.JButton" name="hairColourPersonal5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -215,10 +215,10 @@
         <Property name="text" type="java.lang.String" value="Hair Colour 5"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColour5ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal5ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColour4">
+    <Component class="javax.swing.JButton" name="hairColourPersonal4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -226,10 +226,10 @@
         <Property name="text" type="java.lang.String" value="Hair Colour 4"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColour4ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal4ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColour2">
+    <Component class="javax.swing.JButton" name="hairColourPersonal2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -237,10 +237,10 @@
         <Property name="text" type="java.lang.String" value="Hair Colour 2"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColour2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal2ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColour1">
+    <Component class="javax.swing.JButton" name="hairColourPersonal1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -248,10 +248,10 @@
         <Property name="text" type="java.lang.String" value="Hair Colour 1"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColour1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColour3">
+    <Component class="javax.swing.JButton" name="hairColourPersonal3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -259,7 +259,7 @@
         <Property name="text" type="java.lang.String" value="Hair Colour 3"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColour3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal3ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

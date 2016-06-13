@@ -42,6 +42,41 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         bodyType5.setOpaque(false);
         bodyType5.setContentAreaFilled(false);
         bodyType5.setBorderPainted(false);
+        
+        Height1.setOpaque(false);
+        Height1.setContentAreaFilled(false);
+        Height1.setBorderPainted(false);        
+        Height2.setOpaque(false);
+        Height2.setContentAreaFilled(false);
+        Height2.setBorderPainted(false);        
+        Height3.setOpaque(false);
+        Height3.setContentAreaFilled(false);
+        Height3.setBorderPainted(false);        
+        Height4.setOpaque(false);
+        Height4.setContentAreaFilled(false);
+        Height4.setBorderPainted(false);        
+        Height5.setOpaque(false);
+        Height5.setContentAreaFilled(false);
+        Height5.setBorderPainted(false);
+        
+        hairColourPersonal1.setOpaque(false);
+        hairColourPersonal1.setContentAreaFilled(false);
+        hairColourPersonal1.setBorderPainted(false);        
+        hairColourPersonal2.setOpaque(false);
+        hairColourPersonal2.setContentAreaFilled(false);
+        hairColourPersonal2.setBorderPainted(false);
+        hairColourPersonal3.setOpaque(false);
+        hairColourPersonal3.setContentAreaFilled(false);
+        hairColourPersonal3.setBorderPainted(false);
+        hairColourPersonal4.setOpaque(false);
+        hairColourPersonal4.setContentAreaFilled(false);
+        hairColourPersonal4.setBorderPainted(false);
+        hairColourPersonal5.setOpaque(false);
+        hairColourPersonal5.setContentAreaFilled(false);
+        hairColourPersonal5.setBorderPainted(false);
+        
+       
+        
     }
 
     /**
@@ -63,11 +98,11 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         Height5 = new javax.swing.JButton();
         Height4 = new javax.swing.JButton();
         Height3 = new javax.swing.JButton();
-        hairColour5 = new javax.swing.JButton();
-        hairColour4 = new javax.swing.JButton();
-        hairColour2 = new javax.swing.JButton();
-        hairColour1 = new javax.swing.JButton();
-        hairColour3 = new javax.swing.JButton();
+        hairColourPersonal5 = new javax.swing.JButton();
+        hairColourPersonal4 = new javax.swing.JButton();
+        hairColourPersonal2 = new javax.swing.JButton();
+        hairColourPersonal1 = new javax.swing.JButton();
+        hairColourPersonal3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -151,43 +186,43 @@ public class AppearanceQuiz extends javax.swing.JFrame {
             }
         });
 
-        hairColour5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        hairColour5.setText("Hair Colour 5");
-        hairColour5.addActionListener(new java.awt.event.ActionListener() {
+        hairColourPersonal5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPersonal5.setText("Hair Colour 5");
+        hairColourPersonal5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hairColour5ActionPerformed(evt);
+                hairColourPersonal5ActionPerformed(evt);
             }
         });
 
-        hairColour4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        hairColour4.setText("Hair Colour 4");
-        hairColour4.addActionListener(new java.awt.event.ActionListener() {
+        hairColourPersonal4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPersonal4.setText("Hair Colour 4");
+        hairColourPersonal4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hairColour4ActionPerformed(evt);
+                hairColourPersonal4ActionPerformed(evt);
             }
         });
 
-        hairColour2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        hairColour2.setText("Hair Colour 2");
-        hairColour2.addActionListener(new java.awt.event.ActionListener() {
+        hairColourPersonal2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPersonal2.setText("Hair Colour 2");
+        hairColourPersonal2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hairColour2ActionPerformed(evt);
+                hairColourPersonal2ActionPerformed(evt);
             }
         });
 
-        hairColour1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        hairColour1.setText("Hair Colour 1");
-        hairColour1.addActionListener(new java.awt.event.ActionListener() {
+        hairColourPersonal1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPersonal1.setText("Hair Colour 1");
+        hairColourPersonal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hairColour1ActionPerformed(evt);
+                hairColourPersonal1ActionPerformed(evt);
             }
         });
 
-        hairColour3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        hairColour3.setText("Hair Colour 3");
-        hairColour3.addActionListener(new java.awt.event.ActionListener() {
+        hairColourPersonal3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPersonal3.setText("Hair Colour 3");
+        hairColourPersonal3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hairColour3ActionPerformed(evt);
+                hairColourPersonal3ActionPerformed(evt);
             }
         });
 
@@ -219,15 +254,15 @@ public class AppearanceQuiz extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Height5))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(hairColour1)
+                        .addComponent(hairColourPersonal1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hairColour2)
+                        .addComponent(hairColourPersonal2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hairColour3)
+                        .addComponent(hairColourPersonal3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hairColour4)
+                        .addComponent(hairColourPersonal4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hairColour5)))
+                        .addComponent(hairColourPersonal5)))
                 .addContainerGap(371, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -249,11 +284,11 @@ public class AppearanceQuiz extends javax.swing.JFrame {
                     .addComponent(Height5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hairColour1)
-                    .addComponent(hairColour2)
-                    .addComponent(hairColour3)
-                    .addComponent(hairColour4)
-                    .addComponent(hairColour5))
+                    .addComponent(hairColourPersonal1)
+                    .addComponent(hairColourPersonal2)
+                    .addComponent(hairColourPersonal3)
+                    .addComponent(hairColourPersonal4)
+                    .addComponent(hairColourPersonal5))
                 .addContainerGap(435, Short.MAX_VALUE))
         );
 
@@ -301,25 +336,25 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         heightPersonal = 3;
     }//GEN-LAST:event_Height3ActionPerformed
 
-    private void hairColour5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour5ActionPerformed
+    private void hairColourPersonal5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPersonal5ActionPerformed
         hairColPersonal = 5;
-    }//GEN-LAST:event_hairColour5ActionPerformed
+    }//GEN-LAST:event_hairColourPersonal5ActionPerformed
 
-    private void hairColour4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour4ActionPerformed
+    private void hairColourPersonal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPersonal4ActionPerformed
         hairColPersonal = 4;
-    }//GEN-LAST:event_hairColour4ActionPerformed
+    }//GEN-LAST:event_hairColourPersonal4ActionPerformed
 
-    private void hairColour2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour2ActionPerformed
+    private void hairColourPersonal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPersonal2ActionPerformed
         hairColPersonal = 2;
-    }//GEN-LAST:event_hairColour2ActionPerformed
+    }//GEN-LAST:event_hairColourPersonal2ActionPerformed
 
-    private void hairColour1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour1ActionPerformed
+    private void hairColourPersonal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPersonal1ActionPerformed
         hairColPersonal = 1;
-    }//GEN-LAST:event_hairColour1ActionPerformed
+    }//GEN-LAST:event_hairColourPersonal1ActionPerformed
 
-    private void hairColour3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColour3ActionPerformed
+    private void hairColourPersonal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPersonal3ActionPerformed
         hairColPersonal = 3;
-    }//GEN-LAST:event_hairColour3ActionPerformed
+    }//GEN-LAST:event_hairColourPersonal3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -367,10 +402,10 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     private javax.swing.JButton bodyType3;
     private javax.swing.JButton bodyType4;
     private javax.swing.JButton bodyType5;
-    private javax.swing.JButton hairColour1;
-    private javax.swing.JButton hairColour2;
-    private javax.swing.JButton hairColour3;
-    private javax.swing.JButton hairColour4;
-    private javax.swing.JButton hairColour5;
+    private javax.swing.JButton hairColourPersonal1;
+    private javax.swing.JButton hairColourPersonal2;
+    private javax.swing.JButton hairColourPersonal3;
+    private javax.swing.JButton hairColourPersonal4;
+    private javax.swing.JButton hairColourPersonal5;
     // End of variables declaration//GEN-END:variables
 }
