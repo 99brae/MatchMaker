@@ -129,15 +129,15 @@
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="HeightPersonal10" min="-2" max="-2" attributes="0"/>
+                              <Component id="HeightPref1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="HeightPersonal6" min="-2" max="-2" attributes="0"/>
+                              <Component id="HeightPref2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="HeightPersonal9" min="-2" max="-2" attributes="0"/>
+                              <Component id="HeightPref3" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="HeightPersonal8" min="-2" max="-2" attributes="0"/>
+                              <Component id="HeightPref4" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="HeightPersonal7" min="-2" max="-2" attributes="0"/>
+                              <Component id="HeightPref5" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -163,26 +163,26 @@
                                           <Component id="bodyTypePref5" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="hairColourPersonal7" min="-2" max="-2" attributes="0"/>
+                                          <Component id="hairColourPref1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="hairColourPersonal8" min="-2" max="-2" attributes="0"/>
+                                          <Component id="hairColourPref2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="hairColourPersonal6" min="-2" max="-2" attributes="0"/>
+                                          <Component id="hairColourPref3" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="hairColourPersonal9" min="-2" max="-2" attributes="0"/>
+                                          <Component id="hairColourPref4" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="hairColourPersonal10" min="-2" max="-2" attributes="0"/>
+                                          <Component id="hairColourPref5" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="backgroundPersonal7" min="-2" max="-2" attributes="0"/>
+                                          <Component id="backgroundPref1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="backgroundPersonal10" min="-2" max="-2" attributes="0"/>
+                                          <Component id="backgroundPref2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="backgroundPersonal8" min="-2" max="-2" attributes="0"/>
+                                          <Component id="backgroundPref3" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="backgroundPersonal9" min="-2" max="-2" attributes="0"/>
+                                          <Component id="backgroundPref4" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="backgroundPersonal6" min="-2" max="-2" attributes="0"/>
+                                          <Component id="backgroundPref5" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
@@ -190,11 +190,11 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="bodyWeightPref2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="bodyWeightPersonal10" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bodyWeightPref3" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="bodyWeightPersonal7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bodyWeightPref4" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="bodyWeightPersonal6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bodyWeightPref5" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -276,7 +276,7 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="10" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -291,45 +291,45 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="bodyWeightPref1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="bodyWeightPref2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="bodyWeightPersonal10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="bodyWeightPersonal7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="bodyWeightPersonal6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bodyWeightPref3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bodyWeightPref4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bodyWeightPref5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="hairColourPersonal8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="hairColourPersonal6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="hairColourPersonal9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="hairColourPersonal10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hairColourPref2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hairColourPref3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hairColourPref4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hairColourPref5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="hairColourPersonal7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hairColourPref1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="backgroundPersonal7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="backgroundPersonal10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="backgroundPersonal8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="backgroundPersonal9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="backgroundPersonal6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="backgroundPref1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="backgroundPref2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="backgroundPref3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="backgroundPref4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="backgroundPref5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="HeightPersonal10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="HeightPersonal6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="HeightPersonal9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="HeightPersonal8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="HeightPersonal7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HeightPref1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HeightPref2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HeightPref3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HeightPref4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HeightPref5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
@@ -762,7 +762,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FinishedActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="backgroundPersonal6">
+    <Component class="javax.swing.JButton" name="backgroundPref5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -774,10 +774,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPersonal6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPref5ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColourPersonal6">
+    <Component class="javax.swing.JButton" name="hairColourPref3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -789,10 +789,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPref3ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColourPersonal7">
+    <Component class="javax.swing.JButton" name="hairColourPref1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -804,10 +804,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPref1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColourPersonal8">
+    <Component class="javax.swing.JButton" name="hairColourPref2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -819,10 +819,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal8ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPref2ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColourPersonal9">
+    <Component class="javax.swing.JButton" name="hairColourPref4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -834,7 +834,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal9ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPref4ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
@@ -847,7 +847,7 @@
         <Property name="text" type="java.lang.String" value="Height?"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="backgroundPersonal7">
+    <Component class="javax.swing.JButton" name="backgroundPref1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -859,10 +859,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPersonal7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPref1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="backgroundPersonal8">
+    <Component class="javax.swing.JButton" name="backgroundPref3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -874,10 +874,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPersonal8ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPref3ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="backgroundPersonal9">
+    <Component class="javax.swing.JButton" name="backgroundPref4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -889,10 +889,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPersonal9ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPref4ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="backgroundPersonal10">
+    <Component class="javax.swing.JButton" name="backgroundPref2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -904,10 +904,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPersonal10ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backgroundPref2ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="HeightPersonal6">
+    <Component class="javax.swing.JButton" name="HeightPref2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -919,7 +919,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPersonal6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPref2ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel10">
@@ -947,7 +947,7 @@
         <Property name="text" type="java.lang.String" value="Hair Colour?"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="bodyWeightPersonal6">
+    <Component class="javax.swing.JButton" name="bodyWeightPref5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -959,7 +959,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bodyWeightPersonal6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bodyWeightPref5ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel12">
@@ -1027,7 +1027,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bodyTypePref3ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="HeightPersonal7">
+    <Component class="javax.swing.JButton" name="HeightPref5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -1039,10 +1039,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPersonal7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPref5ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="bodyWeightPersonal7">
+    <Component class="javax.swing.JButton" name="bodyWeightPref4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -1054,10 +1054,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bodyWeightPersonal7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bodyWeightPref4ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="HeightPersonal8">
+    <Component class="javax.swing.JButton" name="HeightPref4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -1069,7 +1069,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPersonal8ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPref4ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bodyWeightPref2">
@@ -1087,7 +1087,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bodyWeightPref2ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="HeightPersonal9">
+    <Component class="javax.swing.JButton" name="HeightPref3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -1099,7 +1099,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPersonal9ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPref3ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bodyWeightPref1">
@@ -1117,7 +1117,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bodyWeightPref1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hairColourPersonal10">
+    <Component class="javax.swing.JButton" name="hairColourPref5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -1129,10 +1129,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPersonal10ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hairColourPref5ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="bodyWeightPersonal10">
+    <Component class="javax.swing.JButton" name="bodyWeightPref3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -1144,10 +1144,10 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bodyWeightPersonal10ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bodyWeightPref3ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="HeightPersonal10">
+    <Component class="javax.swing.JButton" name="HeightPref1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="8" style="0"/>
@@ -1159,7 +1159,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPersonal10ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeightPref1ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel14">
