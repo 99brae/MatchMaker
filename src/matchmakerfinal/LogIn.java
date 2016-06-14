@@ -26,10 +26,10 @@ import static matchmakerfinal.Registration.computeHash;
  * @author Stephanie
  */
 public class LogIn extends javax.swing.JFrame {
-
+    static public String fileSID;
     /**
      * Creates new form LogIn
-     */
+*/
     public LogIn() {
         initComponents();
          // Set the screen size to 580 x 500
@@ -125,6 +125,8 @@ public class LogIn extends javax.swing.JFrame {
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // String to store current line from the file
         String user = null;
+        //where we are in the file
+        
         // The file of previously entered data (un, pw, fn, ln)
           File f = new File ("user.txt");
           Scanner s = null;
@@ -132,12 +134,14 @@ public class LogIn extends javax.swing.JFrame {
             s = new Scanner (f);
             // While you have not reached the end of the file
             while (s.hasNextLine()){
+             
             // Store the line in the user var
             user = s.nextLine();
             // Split the string into an array 
             String[] sa = user.split(",");   
             // if the username and password match the one previously stored
             if (userName.getText().equals(sa[0]) && encrypt().equals(sa[1])){
+             fileSID = sa[0];
                 // The user has logged in
                  setVisible(false);
         new Menu().setVisible(true);
@@ -156,6 +160,7 @@ public class LogIn extends javax.swing.JFrame {
         }        
     }//GEN-LAST:event_loginActionPerformed
 
+    
     private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_passwordActionPerformed

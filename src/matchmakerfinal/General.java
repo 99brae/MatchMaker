@@ -5,15 +5,25 @@
  */
 package matchmakerfinal;
 
+import java.awt.Color;
+import java.awt.HeadlessException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-
 /**
  *
  * @author Stephanie
  */
 public class General extends javax.swing.JFrame {
-
+    public static String StudentID;
     public String gender;
     public String grade;
     public String LFGender = "";
@@ -24,7 +34,128 @@ public class General extends javax.swing.JFrame {
      */
     public General() {
         initComponents();
+                // String to store current line from the file
+        String user = null;
+        //where we are in the file
+        
+        // The file of previously entered data (un, pw, fn, ln)
+          File info = new File ("GeneralInfo.txt");
+          Scanner s = null;
+        try {            
+            s = new Scanner (info);
+            // While you have not reached the end of the file
+            while (s.hasNextLine()){
+             
+            // Store the line in the user var
+            user = s.nextLine();
+            // Split the string into an array 
+            String[] userInfo = user.split(",");   
+            // if the username and password match the one previously stored
+            if (LogIn.fileSID.equals(userInfo[0])){
+                firstName.setText(userInfo[1]);
+                lastName.setText(userInfo[2]);
+                
+                if (userInfo[3].equals("female")){
+                    myGenderFemale.doClick();
+                   // notSelected(myGenderMale);
+                    //selected(myGenderFemale);
+                }
+                else {
+                    myGenderMale.doClick();
+                }
+                
+                if (userInfo[4].equals("9")){
+                    myGrade9.doClick();
+                }
+                else if (userInfo[4].equals("10")){
+                      myGrade10.doClick();
+                }
+                else if (userInfo[4].equals("11")){
+                      myGrade11.doClick();
+                }
+                else {
+                    myGrade12.doClick();
+                }
+                looks.setText(userInfo[5]);
+                personality.setText(String.valueOf(100 - Integer.parseInt(userInfo[5])));
+                String[] interestGender = userInfo[6].split(";");
+               
+                
+                if (LinearStringSearcher(interestGender,"female") > 0){
+                    LFFemale.doClick();
+                }
+                if (LinearStringSearcher(interestGender,"male") > 0){
+                    LFMale.doClick();
+                }
+                String[] interestGrade = userInfo[7].split(";");
+                if (LinearStringSearcher(interestGrade,"9") > 0){
+                    LFGrade9.doClick();
+                }
+                if (LinearStringSearcher(interestGrade,"10") > 0){
+                    LFGrade10.doClick();
+                }
+                if (LinearStringSearcher(interestGrade,"11") > 0){
+                    LFGrade11.doClick();
+                }
+                if (LinearStringSearcher(interestGrade,"12") > 0){
+                    LFGrade12.doClick();
+                } 
+            }
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+        }  
+        
+     //  if there is a value in SID read file and grab answer (if there )
+//and add to field based on whats in the file. The file will be added to
+ //      myGrade10.setSelected(true);
+        
           setSize(1108, 733);
+    }
+        public int LinearStringSearcher(String[] stringArray, String target) {
+        // loop that runs through the array of strings while there are still words left
+        for (int i = 0; i < stringArray.length; i++) {
+            // if the word is found
+            if (stringArray[i].equals(target)) {
+                // return the current index
+                return i + 1;
+            }
+        }
+        // the word has not been found, return -1 to indicate such
+        return -1;
+    }
+    
+    private int completed (){
+         String user = null;
+         int here = 0;
+        //where we are in the file
+        
+        // The file of previously entered data (un, pw, fn, ln)
+          File info = new File ("GeneralInfo.txt");
+          Scanner s = null;
+        try {            
+            s = new Scanner (info);
+            // While you have not reached the end of the file
+            while (s.hasNextLine()){
+             
+            // Store the line in the user var
+            user = s.nextLine();
+            here++;
+            // Split the string into an array 
+            String[] userInfo = user.split(",");   
+            // if the username and password match the one previously stored
+            if (LogIn.fileSID.equals(userInfo[0])){
+             return here;
+            }
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+    }
+        return -1;
     }
 
     /**
@@ -193,11 +324,11 @@ public class General extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        if (checkNames(firstName) && checkNames(lastName)){
+        if (checkNames(firstName) || checkNames(lastName)){
              JOptionPane.showMessageDialog(this, "Please ensure the name fields are filled in correctly", "Names", JOptionPane.PLAIN_MESSAGE);
         }
         //check the field for personality and looks are both numbers
-        else if (checkRatio(personality) && checkRatio(looks)){
+        else if (checkRatio(personality) || checkRatio(looks)){
             JOptionPane.showMessageDialog(this, "Please ensure the looks:personality field contain only numbers", "Names", JOptionPane.PLAIN_MESSAGE);
         }
         else if (addTo()){
@@ -218,21 +349,110 @@ public class General extends javax.swing.JFrame {
                     
                 }
                 else {
-                     gradeInterest = gradeInterest + LFGrade[i] +",";
+                     gradeInterest = gradeInterest + LFGrade[i] +";";
                 }
             }     
-          int length =   gradeInterest.length();
+          
         gradeInterest = gradeInterest + LFGrade[3];
-        if (gradeInterest.charAt(length) == ','){
+        int length =   gradeInterest.length();
+        
+        if (gradeInterest.charAt(length-1) == ';'){
+           
             gradeInterest = gradeInterest.substring(0,(length - 1));
+            
         }
         // store information in String
         String userInfo = (firstName.getText()+ "," + lastName.getText()+ "," + gender + "," + grade + "," + personality.getText()+ "," + LFGender + "," + gradeInterest);
-        System.out.println(userInfo);
+     
+        if (completed() == -1){
+            PrintWriter pw = null;
+            try {
+                // create file for info to be stored
+                File f = new File("GeneralInfo.txt");
+                // create a PrintWriter that will append the file (will add to it as apppose to overwrite)
+                pw = new PrintWriter(new FileWriter(f, true));
+                // store the username, encrypted password, first name and last name
+                pw.println(LogIn.fileSID + "," + userInfo);
+                
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (Exception ex) {
+                Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
+            } finally {
+                // close the print writer, hide this screen, and set the login screen to visible
+                pw.close();  
+        }}
+        else {
+              String user = null;
+        // The file of previously entered data (un, pw, fn, ln)
+          File info = new File ("GeneralInfo.txt");
+          String[] file = new String[findLength(info)];
+          Scanner s = null;
+        try {            
+            s = new Scanner (info);
+            int here = 0;
+            // While you have not reached the end of the file
+            while (s.hasNextLine()){
+            // Split the string into an array 
+            file[here] = s.nextLine();
+            here++;
+            }            
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+    }
+        System.out.println(completed());
+        file[completed()-1] = LogIn.fileSID + "," + userInfo;
+        
+        
+         PrintWriter pw = null;         
+            try {
+                // create file for info to be stored
+                File f = new File("GeneralInfo.txt");
+                pw = new PrintWriter(new FileWriter(f));
+                // create a PrintWriter that will append the file (will add to it as apppose to overwrite)
+                pw = new PrintWriter(new FileWriter(f, true));
+                // store the username, encrypted password, first name and last name
+                for (int i = 0; i < file.length; i++)
+                pw.println(file[i]);
+                
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (Exception ex) {
+                Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
+            } finally {
+                // close the print writer, hide this screen, and set the login screen to visible
+                pw.close();  
+        
+        }
+        }     
+       
         setVisible(false);
         new Menu().setVisible(true);
+        
         }
     }//GEN-LAST:event_jButton5ActionPerformed
+    
+    private int findLength(File x){
+        int length = 0;
+        Scanner s = null;
+        try {            
+            s = new Scanner (x);
+            // While you have not reached the end of the file
+            while (s.hasNextLine()){
+            s.nextLine();
+            length++;
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+    }
+        return length;
+    }
+    
+    
     private boolean addTo(){
     int RP = Integer.parseInt(personality.getText());
     int LP = Integer.parseInt(looks.getText());
@@ -293,76 +513,137 @@ public class General extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_firstNameActionPerformed
 
+    private void notSelected(JButton button){
+        button.setBackground(Color.WHITE);
+        button.setForeground(Color.BLACK);
+    }
+    
+    private void selected(JButton button){
+        button.setBackground(Color.BLACK);
+        button.setForeground(Color.GRAY);
+    }
     private void myGenderFemaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myGenderFemaleActionPerformed
-       gender = "female";
+       
+       notSelected(myGenderMale);
+       selected(myGenderFemale);
+      
+        gender = "female";
+       
     }//GEN-LAST:event_myGenderFemaleActionPerformed
 
     private void myGenderMaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myGenderMaleActionPerformed
+       
+       notSelected(myGenderFemale);
+       selected(myGenderMale);
        gender = "male";
     }//GEN-LAST:event_myGenderMaleActionPerformed
 
     private void myGrade9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myGrade9ActionPerformed
-       grade = "9";
+       notSelected(myGrade10);
+       notSelected(myGrade11);
+       notSelected(myGrade12);
+       selected(myGrade9);
+             
+        grade = "9";
     }//GEN-LAST:event_myGrade9ActionPerformed
 
     private void myGrade10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myGrade10ActionPerformed
-       grade = "10";
+       notSelected(myGrade9);
+       notSelected(myGrade11);
+       notSelected(myGrade12);
+       selected(myGrade10);
+        grade = "10";
     }//GEN-LAST:event_myGrade10ActionPerformed
 
     private void myGrade11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myGrade11ActionPerformed
-     grade = "11";
+    notSelected(myGrade9);
+       notSelected(myGrade10);
+       notSelected(myGrade12);
+       selected(myGrade11);
+        grade = "11";
     }//GEN-LAST:event_myGrade11ActionPerformed
 
     private void myGrade12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myGrade12ActionPerformed
-      grade = "12";
+     notSelected(myGrade9);
+       notSelected(myGrade11);
+       notSelected(myGrade10);
+       selected(myGrade12);
+        grade = "12";
     }//GEN-LAST:event_myGrade12ActionPerformed
 
     private void LFFemaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFFemaleActionPerformed
         if ("male".equals(LFGender)){
-            LFGender = "female,male";
+            selected(LFFemale);
+             selected(LFMale);
+            LFGender = "female;male";
         }
         else if ("".equals(LFGender)){
+            selected(LFFemale);
+            notSelected(LFMale);
             LFGender = "female";
+            
         }
-        else if ("female,male".equals(LFGender)){
+        else if ("female;male".equals(LFGender)){
+             notSelected(LFFemale);
+            selected(LFMale);
             LFGender = "male";
+           
         }
         else {
+            notSelected(LFFemale);
+            notSelected(LFMale);
             LFGender = "";
         }
     }//GEN-LAST:event_LFFemaleActionPerformed
 
     private void LFMaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFMaleActionPerformed
        if ("male".equals(LFGender)){
+           notSelected(LFFemale);
+            notSelected(LFMale);
             LFGender = "";
+            
         }
         else if ("".equals(LFGender)){
+            notSelected(LFFemale);
+            selected(LFMale);
             LFGender = "male";
+            
         }
-        else if ("female,male".equals(LFGender)){
+        else if ("female;male".equals(LFGender)){
+            selected(LFFemale);
+            notSelected(LFMale);
             LFGender = "female";
+             
         }
         else {
-            LFGender = "female,male";
+            selected(LFFemale);
+             selected(LFMale);
+            LFGender = "female;male";
         }
     
     }//GEN-LAST:event_LFMaleActionPerformed
 
     private void LFGrade9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFGrade9ActionPerformed
         if ("9".equals(LFGrade[0])){
+               
+            notSelected(LFGrade9);
             LFGrade[0] = "";
+            
         }
         else {
+            selected(LFGrade9);
             LFGrade[0] = "9";
         }
     }//GEN-LAST:event_LFGrade9ActionPerformed
 
     private void LFGrade10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFGrade10ActionPerformed
          if ("10".equals(LFGrade[1])){
+             notSelected(LFGrade10);
                LFGrade[1] = "";
            
         }
         else {
+             selected(LFGrade10);
                LFGrade[1] = "10";
            
         }
@@ -371,10 +652,12 @@ public class General extends javax.swing.JFrame {
 
     private void LFGrade11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFGrade11ActionPerformed
       if ("11".equals(LFGrade[2])){
+          notSelected(LFGrade11);
             LFGrade[2] = "";
            
         }
         else {
+          selected(LFGrade11);
             LFGrade[2] = "11";
             
         }
@@ -383,10 +666,12 @@ public class General extends javax.swing.JFrame {
 
     private void LFGrade12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFGrade12ActionPerformed
         if ("12".equals(LFGrade[3])){
+            notSelected(LFGrade12);
               LFGrade[3] = "";
             
         }
         else {
+            selected(LFGrade12);
               LFGrade[3] = "12";
        
         }
@@ -449,3 +734,4 @@ public class General extends javax.swing.JFrame {
     private javax.swing.JTextField personality;
     // End of variables declaration//GEN-END:variables
 }
+//take user class and write it to a file
