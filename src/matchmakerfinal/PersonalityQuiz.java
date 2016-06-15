@@ -82,14 +82,14 @@ public class PersonalityQuiz extends javax.swing.JPanel {
 
         jLabel8.setText("Personality:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "honesty", "persistence", "friendly", "organization" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "lazy", "unorganization", "messy", "dependant" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
@@ -156,9 +156,9 @@ public class PersonalityQuiz extends javax.swing.JPanel {
             }
         });
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "night owl", "early bird" }));
 
-        jLabel9.setText("Ideal first date:");
+        jLabel9.setText("Ideal first date: (Answer should be 1 word)");
 
         jLabel10.setText("Where");
 
@@ -227,10 +227,13 @@ public class PersonalityQuiz extends javax.swing.JPanel {
                                     .addComponent(jCheckBox9)
                                     .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(43, 43, 43)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(43, 43, 43)
+                                        .addComponent(jLabel10)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel12)
                                             .addComponent(jLabel11))
@@ -255,9 +258,7 @@ public class PersonalityQuiz extends javax.swing.JPanel {
                                         .addComponent(jCheckBox8)
                                         .addGap(18, 18, 18)
                                         .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel10)
-                        .addComponent(jLabel9)))
+                    .addComponent(jLabel9))
                 .addContainerGap(35, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -306,9 +307,9 @@ public class PersonalityQuiz extends javax.swing.JPanel {
                 .addGap(37, 37, 37)
                 .addComponent(jLabel9)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -369,6 +370,55 @@ public class PersonalityQuiz extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        if(jCheckBox1.isSelected()){
+            log.sport = "basketball";
+        }
+        
+        if(jCheckBox2.isSelected()){
+             log.sport = "tennis";
+        }
+        if(jCheckBox3.isSelected()){
+             log.sport = "soccer";
+        }
+        
+        if(jCheckBox4.isSelected()){
+             log.sport = jTextField1.getText();
+        }
+        
+        if(jCheckBox5.isSelected()){
+             log.sport = "non-fiction";
+        }
+        
+        if(jCheckBox6.isSelected()){
+             log.sport = "adventure";
+        }
+        
+        if(jCheckBox7.isSelected()){
+             log.sport = "manga";
+        }
+        
+        if(jCheckBox8.isSelected()){
+             log.sport = jTextField2.getText();
+        }
+        if(jCheckBox9.isSelected()){
+             log.sport = "travelling";
+        }
+        if(jCheckBox10.isSelected()){
+             log.sport = "relaxation";
+        }
+        if(jCheckBox11.isSelected()){
+             log.sport = "history";
+        }
+        
+        log.besttrait = (String) jComboBox1.getSelectedItem();
+        log.worsttrait = (String) jComboBox2.getSelectedItem();
+        log.food = (String) jComboBox3.getSelectedItem();
+        log.night = (String) jComboBox4.getSelectedItem();
+        
+        log.where = jTextField3.getText();
+        log.when = jTextField4.getText();
+        log.what = jTextField5.getText();
+        
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
