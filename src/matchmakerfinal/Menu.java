@@ -16,6 +16,7 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
+        // set the size of the screen to 1100 x 950
         setSize(1100, 950);
     }
 
@@ -66,6 +67,7 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void genInfoQuizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genInfoQuizActionPerformed
+        // if the user click the general quiz button open up the general quiz
         setVisible(false);
         new General().setVisible(true);
     }//GEN-LAST:event_genInfoQuizActionPerformed

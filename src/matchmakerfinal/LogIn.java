@@ -34,8 +34,11 @@ public class LogIn extends javax.swing.JFrame {
         initComponents();
          // Set the screen size to 580 x 500
         setSize(1016, 699);
+        admin.setOpaque(false);
+        admin.setContentAreaFilled(false);
+        admin.setBorderPainted(false);
+   
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -49,6 +52,7 @@ public class LogIn extends javax.swing.JFrame {
         openRegScreen = new javax.swing.JButton();
         userName = new javax.swing.JTextField();
         password = new javax.swing.JPasswordField();
+        admin = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -91,6 +95,14 @@ public class LogIn extends javax.swing.JFrame {
         getContentPane().add(password);
         password.setBounds(470, 390, 280, 40);
 
+        admin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adminActionPerformed(evt);
+            }
+        });
+        getContentPane().add(admin);
+        admin.setBounds(60, 80, 130, 130);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matchmakerfinal/Login.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, -10, 1020, 680);
@@ -125,26 +137,24 @@ public class LogIn extends javax.swing.JFrame {
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // String to store current line from the file
         String user = null;
-        //where we are in the file
-        
-        // The file of previously entered data (un, pw, fn, ln)
+        // The file containing the users and their passwords
           File f = new File ("user.txt");
           Scanner s = null;
         try {            
             s = new Scanner (f);
             // While you have not reached the end of the file
-            while (s.hasNextLine()){
-             
+            while (s.hasNextLine()){             
             // Store the line in the user var
             user = s.nextLine();
             // Split the string into an array 
             String[] sa = user.split(",");   
             // if the username and password match the one previously stored
             if (userName.getText().equals(sa[0]) && encrypt().equals(sa[1])){
+             // store the user name in a globel var to be accessed from quizes
              fileSID = sa[0];
-                // The user has logged in
+                // The user has logged in, set the menu screen to visable
                  setVisible(false);
-        new Menu().setVisible(true);
+                 new Menu().setVisible(true);
                 break;
             }
             // if you reach the end of the file
@@ -162,8 +172,19 @@ public class LogIn extends javax.swing.JFrame {
 
     
     private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
-        // TODO add your handling code here:
+
+    
     }//GEN-LAST:event_passwordActionPerformed
+
+    private void adminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminActionPerformed
+              System.out.println("IT WORKS");
+        try {
+            if (userName.getText().equals("ADMIN") && encrypt().equals("7719653DDE352CA76EE01E8898B68C2343DF60FAEACC8EC0F1BE132AD03B56A8")){
+                
+            }   } catch (Exception ex) {
+            Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_adminActionPerformed
 
         
     /**
@@ -172,8 +193,11 @@ public class LogIn extends javax.swing.JFrame {
      * @ return - the string of the encypted password
      */
     private String encrypt() throws Exception{
-      String passwordAsString = "";
+        // var to store the password as a string
+        String passwordAsString = "";
+        // run through array of chars (from password field)
         for (int i = 0; i < password.getPassword().length; i++){
+             // store in string
              passwordAsString = passwordAsString + password.getPassword()[i];
         }
     // encrypt using methods previously
@@ -217,6 +241,7 @@ public class LogIn extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton admin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton login;
     private javax.swing.JButton openRegScreen;

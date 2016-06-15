@@ -1,5 +1,0 @@
-070202730,Braedeonnngen,prisoner,female,9,0,male,9;10;12
-872910389,Brian,B,female,11,50,female,9;12
-198732910,Brian,Mills,female,12,0,female;male,9;10;11;12
-283741928,Munchie,Snorlax,female,12,70,female;male,12
-182830478,Sarah,Park,female,12,1,male,12
