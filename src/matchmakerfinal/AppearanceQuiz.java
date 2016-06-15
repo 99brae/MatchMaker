@@ -29,7 +29,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
      */
     public AppearanceQuiz() {
         initComponents();
-        setSize(1108, 733);
+        setSize(850, 600);
 //        bodyType1.setOpaque(false);
 //        bodyType1.setContentAreaFilled(false);
 //        bodyType1.setBorderPainted(true);
@@ -77,10 +77,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 //        hairColourPersonal5.setOpaque(false);
 //        hairColourPersonal5.setContentAreaFilled(false);
 //        hairColourPersonal5.setBorderPainted(false);
-        
-       
-       
-        
+
     }
 
     /**
@@ -125,6 +122,38 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         Finished = new javax.swing.JButton();
+        backgroundPref5 = new javax.swing.JButton();
+        hairColourPref3 = new javax.swing.JButton();
+        hairColourPref1 = new javax.swing.JButton();
+        hairColourPref2 = new javax.swing.JButton();
+        hairColourPref4 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        backgroundPref1 = new javax.swing.JButton();
+        backgroundPref3 = new javax.swing.JButton();
+        backgroundPref4 = new javax.swing.JButton();
+        backgroundPref2 = new javax.swing.JButton();
+        HeightPref2 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        bodyTypePref5 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        bodyWeightPref5 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        bodyTypePref2 = new javax.swing.JButton();
+        bodyTypePref1 = new javax.swing.JButton();
+        bodyTypePref4 = new javax.swing.JButton();
+        bodyTypePref3 = new javax.swing.JButton();
+        HeightPref5 = new javax.swing.JButton();
+        bodyWeightPref4 = new javax.swing.JButton();
+        HeightPref4 = new javax.swing.JButton();
+        bodyWeightPref2 = new javax.swing.JButton();
+        HeightPref3 = new javax.swing.JButton();
+        bodyWeightPref1 = new javax.swing.JButton();
+        hairColourPref5 = new javax.swing.JButton();
+        bodyWeightPref3 = new javax.swing.JButton();
+        HeightPref1 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1108, 733));
@@ -132,7 +161,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         bodyTypePersonal1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyTypePersonal1.setText("Body type 1");
-        bodyTypePersonal1.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyTypePersonal1.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyTypePersonal1.setRequestFocusEnabled(false);
         bodyTypePersonal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,7 +171,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         bodyTypePersonal2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyTypePersonal2.setText("Body type 2");
-        bodyTypePersonal2.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyTypePersonal2.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyTypePersonal2.setRequestFocusEnabled(false);
         bodyTypePersonal2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,7 +181,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         bodyTypePersonal3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyTypePersonal3.setText("Body type 3");
-        bodyTypePersonal3.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyTypePersonal3.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyTypePersonal3.setRequestFocusEnabled(false);
         bodyTypePersonal3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,7 +191,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         bodyTypePersonal4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyTypePersonal4.setText("Body type 4");
-        bodyTypePersonal4.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyTypePersonal4.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyTypePersonal4.setRequestFocusEnabled(false);
         bodyTypePersonal4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,7 +201,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         bodyTypePersonal5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyTypePersonal5.setText("Body type 5");
-        bodyTypePersonal5.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyTypePersonal5.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyTypePersonal5.setRequestFocusEnabled(false);
         bodyTypePersonal5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -182,7 +211,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         HeightPersonal2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         HeightPersonal2.setText("Height 2");
-        HeightPersonal2.setPreferredSize(new java.awt.Dimension(100, 25));
+        HeightPersonal2.setPreferredSize(new java.awt.Dimension(125, 25));
         HeightPersonal2.setRequestFocusEnabled(false);
         HeightPersonal2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -192,7 +221,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         HeightPersonal1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         HeightPersonal1.setText("Height 1");
-        HeightPersonal1.setPreferredSize(new java.awt.Dimension(100, 25));
+        HeightPersonal1.setPreferredSize(new java.awt.Dimension(125, 25));
         HeightPersonal1.setRequestFocusEnabled(false);
         HeightPersonal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,7 +231,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         HeightPersonal5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         HeightPersonal5.setText("Height 4");
-        HeightPersonal5.setPreferredSize(new java.awt.Dimension(100, 25));
+        HeightPersonal5.setPreferredSize(new java.awt.Dimension(125, 25));
         HeightPersonal5.setRequestFocusEnabled(false);
         HeightPersonal5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -212,7 +241,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         HeightPersonal4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         HeightPersonal4.setText("Height 4");
-        HeightPersonal4.setPreferredSize(new java.awt.Dimension(100, 25));
+        HeightPersonal4.setPreferredSize(new java.awt.Dimension(125, 25));
         HeightPersonal4.setRequestFocusEnabled(false);
         HeightPersonal4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -222,7 +251,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         HeightPersonal3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         HeightPersonal3.setText("Height 3");
-        HeightPersonal3.setPreferredSize(new java.awt.Dimension(100, 25));
+        HeightPersonal3.setPreferredSize(new java.awt.Dimension(125, 25));
         HeightPersonal3.setRequestFocusEnabled(false);
         HeightPersonal3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,7 +261,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         hairColourPersonal5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         hairColourPersonal5.setText("Hair Colour 5");
-        hairColourPersonal5.setPreferredSize(new java.awt.Dimension(100, 25));
+        hairColourPersonal5.setPreferredSize(new java.awt.Dimension(125, 25));
         hairColourPersonal5.setRequestFocusEnabled(false);
         hairColourPersonal5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -242,7 +271,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         hairColourPersonal4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         hairColourPersonal4.setText("Hair Colour 4");
-        hairColourPersonal4.setPreferredSize(new java.awt.Dimension(100, 25));
+        hairColourPersonal4.setPreferredSize(new java.awt.Dimension(125, 25));
         hairColourPersonal4.setRequestFocusEnabled(false);
         hairColourPersonal4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -252,7 +281,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         hairColourPersonal2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         hairColourPersonal2.setText("Hair Colour 2");
-        hairColourPersonal2.setPreferredSize(new java.awt.Dimension(100, 25));
+        hairColourPersonal2.setPreferredSize(new java.awt.Dimension(125, 25));
         hairColourPersonal2.setRequestFocusEnabled(false);
         hairColourPersonal2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -262,7 +291,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         hairColourPersonal1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         hairColourPersonal1.setText("Hair Colour 1");
-        hairColourPersonal1.setPreferredSize(new java.awt.Dimension(100, 25));
+        hairColourPersonal1.setPreferredSize(new java.awt.Dimension(125, 25));
         hairColourPersonal1.setRequestFocusEnabled(false);
         hairColourPersonal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -272,7 +301,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         hairColourPersonal3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         hairColourPersonal3.setText("Hair Colour 3");
-        hairColourPersonal3.setPreferredSize(new java.awt.Dimension(100, 25));
+        hairColourPersonal3.setPreferredSize(new java.awt.Dimension(125, 25));
         hairColourPersonal3.setRequestFocusEnabled(false);
         hairColourPersonal3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -282,7 +311,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         backgroundPersonal5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         backgroundPersonal5.setText("Background 5");
-        backgroundPersonal5.setPreferredSize(new java.awt.Dimension(100, 25));
+        backgroundPersonal5.setPreferredSize(new java.awt.Dimension(125, 25));
         backgroundPersonal5.setRequestFocusEnabled(false);
         backgroundPersonal5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -292,7 +321,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         backgroundPersonal4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         backgroundPersonal4.setText("Background 4");
-        backgroundPersonal4.setPreferredSize(new java.awt.Dimension(100, 25));
+        backgroundPersonal4.setPreferredSize(new java.awt.Dimension(125, 25));
         backgroundPersonal4.setRequestFocusEnabled(false);
         backgroundPersonal4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -302,7 +331,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         backgroundPersonal2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         backgroundPersonal2.setText("Background 2");
-        backgroundPersonal2.setPreferredSize(new java.awt.Dimension(100, 25));
+        backgroundPersonal2.setPreferredSize(new java.awt.Dimension(125, 25));
         backgroundPersonal2.setRequestFocusEnabled(false);
         backgroundPersonal2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -312,7 +341,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         backgroundPersonal1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         backgroundPersonal1.setText("Background 1");
-        backgroundPersonal1.setPreferredSize(new java.awt.Dimension(100, 25));
+        backgroundPersonal1.setPreferredSize(new java.awt.Dimension(125, 25));
         backgroundPersonal1.setRequestFocusEnabled(false);
         backgroundPersonal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -322,7 +351,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         backgroundPersonal3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         backgroundPersonal3.setText("Background 3");
-        backgroundPersonal3.setPreferredSize(new java.awt.Dimension(100, 25));
+        backgroundPersonal3.setPreferredSize(new java.awt.Dimension(125, 25));
         backgroundPersonal3.setRequestFocusEnabled(false);
         backgroundPersonal3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -331,18 +360,23 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         });
 
         jLabel1.setText("Body Type?");
+        jLabel1.setPreferredSize(new java.awt.Dimension(125, 25));
 
         jLabel2.setText("Height?");
+        jLabel2.setPreferredSize(new java.awt.Dimension(125, 25));
 
         jLabel3.setText("Hair Colour?");
+        jLabel3.setPreferredSize(new java.awt.Dimension(125, 25));
 
         jLabel4.setText("Background?");
+        jLabel4.setPreferredSize(new java.awt.Dimension(125, 25));
 
         jLabel5.setText("Body Weight?");
+        jLabel5.setPreferredSize(new java.awt.Dimension(125, 25));
 
         bodyWeightPersonal5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyWeightPersonal5.setText("Body Weight 5");
-        bodyWeightPersonal5.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyWeightPersonal5.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyWeightPersonal5.setRequestFocusEnabled(false);
         bodyWeightPersonal5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -352,7 +386,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         bodyWeightPersonal4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyWeightPersonal4.setText("Body Weight 4");
-        bodyWeightPersonal4.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyWeightPersonal4.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyWeightPersonal4.setRequestFocusEnabled(false);
         bodyWeightPersonal4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -362,7 +396,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         bodyWeightPersonal2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyWeightPersonal2.setText("Body Weight 2");
-        bodyWeightPersonal2.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyWeightPersonal2.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyWeightPersonal2.setRequestFocusEnabled(false);
         bodyWeightPersonal2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -372,7 +406,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         bodyWeightPersonal1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyWeightPersonal1.setText("Body Weight 1");
-        bodyWeightPersonal1.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyWeightPersonal1.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyWeightPersonal1.setRequestFocusEnabled(false);
         bodyWeightPersonal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -382,7 +416,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
         bodyWeightPersonal3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         bodyWeightPersonal3.setText("Body Weight 3");
-        bodyWeightPersonal3.setPreferredSize(new java.awt.Dimension(100, 25));
+        bodyWeightPersonal3.setPreferredSize(new java.awt.Dimension(125, 25));
         bodyWeightPersonal3.setRequestFocusEnabled(false);
         bodyWeightPersonal3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -394,7 +428,8 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Appearance Test");
 
-        jLabel7.setText("_________________________________________________________________________________________________________");
+        jLabel7.setText("______________________________________________________________________________________________________________________________________________________");
+        jLabel7.setPreferredSize(new java.awt.Dimension(125, 25));
 
         Finished.setText("Finished");
         Finished.addActionListener(new java.awt.event.ActionListener() {
@@ -403,95 +438,444 @@ public class AppearanceQuiz extends javax.swing.JFrame {
             }
         });
 
+        backgroundPref5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        backgroundPref5.setText("Background 5");
+        backgroundPref5.setPreferredSize(new java.awt.Dimension(125, 25));
+        backgroundPref5.setRequestFocusEnabled(false);
+        backgroundPref5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backgroundPref5ActionPerformed(evt);
+            }
+        });
+
+        hairColourPref3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPref3.setText("Hair Colour 3");
+        hairColourPref3.setPreferredSize(new java.awt.Dimension(125, 25));
+        hairColourPref3.setRequestFocusEnabled(false);
+        hairColourPref3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColourPref3ActionPerformed(evt);
+            }
+        });
+
+        hairColourPref1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPref1.setText("Hair Colour 1");
+        hairColourPref1.setPreferredSize(new java.awt.Dimension(125, 25));
+        hairColourPref1.setRequestFocusEnabled(false);
+        hairColourPref1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColourPref1ActionPerformed(evt);
+            }
+        });
+
+        hairColourPref2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPref2.setText("Hair Colour 2");
+        hairColourPref2.setPreferredSize(new java.awt.Dimension(125, 25));
+        hairColourPref2.setRequestFocusEnabled(false);
+        hairColourPref2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColourPref2ActionPerformed(evt);
+            }
+        });
+
+        hairColourPref4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPref4.setText("Hair Colour 4");
+        hairColourPref4.setPreferredSize(new java.awt.Dimension(125, 25));
+        hairColourPref4.setRequestFocusEnabled(false);
+        hairColourPref4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColourPref4ActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("Body Type?");
+        jLabel8.setPreferredSize(new java.awt.Dimension(125, 25));
+
+        jLabel9.setText("Height?");
+        jLabel9.setPreferredSize(new java.awt.Dimension(125, 25));
+
+        backgroundPref1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        backgroundPref1.setText("Background 1");
+        backgroundPref1.setPreferredSize(new java.awt.Dimension(125, 25));
+        backgroundPref1.setRequestFocusEnabled(false);
+        backgroundPref1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backgroundPref1ActionPerformed(evt);
+            }
+        });
+
+        backgroundPref3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        backgroundPref3.setText("Background 3");
+        backgroundPref3.setPreferredSize(new java.awt.Dimension(125, 25));
+        backgroundPref3.setRequestFocusEnabled(false);
+        backgroundPref3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backgroundPref3ActionPerformed(evt);
+            }
+        });
+
+        backgroundPref4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        backgroundPref4.setText("Background 4");
+        backgroundPref4.setPreferredSize(new java.awt.Dimension(125, 25));
+        backgroundPref4.setRequestFocusEnabled(false);
+        backgroundPref4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backgroundPref4ActionPerformed(evt);
+            }
+        });
+
+        backgroundPref2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        backgroundPref2.setText("Background 2");
+        backgroundPref2.setPreferredSize(new java.awt.Dimension(125, 25));
+        backgroundPref2.setRequestFocusEnabled(false);
+        backgroundPref2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backgroundPref2ActionPerformed(evt);
+            }
+        });
+
+        HeightPref2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        HeightPref2.setText("Height 2");
+        HeightPref2.setPreferredSize(new java.awt.Dimension(125, 25));
+        HeightPref2.setRequestFocusEnabled(false);
+        HeightPref2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HeightPref2ActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setText("Background?");
+        jLabel10.setPreferredSize(new java.awt.Dimension(125, 25));
+
+        bodyTypePref5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyTypePref5.setText("Body type 5");
+        bodyTypePref5.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyTypePref5.setRequestFocusEnabled(false);
+        bodyTypePref5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyTypePref5ActionPerformed(evt);
+            }
+        });
+
+        jLabel11.setText("Hair Colour?");
+        jLabel11.setPreferredSize(new java.awt.Dimension(125, 25));
+
+        bodyWeightPref5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyWeightPref5.setText("Body Weight 5");
+        bodyWeightPref5.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyWeightPref5.setRequestFocusEnabled(false);
+        bodyWeightPref5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyWeightPref5ActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setText("Body Weight?");
+        jLabel12.setPreferredSize(new java.awt.Dimension(125, 25));
+
+        bodyTypePref2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyTypePref2.setText("Body type 2");
+        bodyTypePref2.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyTypePref2.setRequestFocusEnabled(false);
+        bodyTypePref2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyTypePref2ActionPerformed(evt);
+            }
+        });
+
+        bodyTypePref1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyTypePref1.setText("Body type 1");
+        bodyTypePref1.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyTypePref1.setRequestFocusEnabled(false);
+        bodyTypePref1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyTypePref1ActionPerformed(evt);
+            }
+        });
+
+        bodyTypePref4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyTypePref4.setText("Body type 4");
+        bodyTypePref4.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyTypePref4.setRequestFocusEnabled(false);
+        bodyTypePref4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyTypePref4ActionPerformed(evt);
+            }
+        });
+
+        bodyTypePref3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyTypePref3.setText("Body type 3");
+        bodyTypePref3.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyTypePref3.setRequestFocusEnabled(false);
+        bodyTypePref3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyTypePref3ActionPerformed(evt);
+            }
+        });
+
+        HeightPref5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        HeightPref5.setText("Height 4");
+        HeightPref5.setPreferredSize(new java.awt.Dimension(125, 25));
+        HeightPref5.setRequestFocusEnabled(false);
+        HeightPref5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HeightPref5ActionPerformed(evt);
+            }
+        });
+
+        bodyWeightPref4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyWeightPref4.setText("Body Weight 4");
+        bodyWeightPref4.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyWeightPref4.setRequestFocusEnabled(false);
+        bodyWeightPref4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyWeightPref4ActionPerformed(evt);
+            }
+        });
+
+        HeightPref4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        HeightPref4.setText("Height 4");
+        HeightPref4.setPreferredSize(new java.awt.Dimension(125, 25));
+        HeightPref4.setRequestFocusEnabled(false);
+        HeightPref4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HeightPref4ActionPerformed(evt);
+            }
+        });
+
+        bodyWeightPref2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyWeightPref2.setText("Body Weight 2");
+        bodyWeightPref2.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyWeightPref2.setRequestFocusEnabled(false);
+        bodyWeightPref2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyWeightPref2ActionPerformed(evt);
+            }
+        });
+
+        HeightPref3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        HeightPref3.setText("Height 3");
+        HeightPref3.setPreferredSize(new java.awt.Dimension(125, 25));
+        HeightPref3.setRequestFocusEnabled(false);
+        HeightPref3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HeightPref3ActionPerformed(evt);
+            }
+        });
+
+        bodyWeightPref1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyWeightPref1.setText("Body Weight 1");
+        bodyWeightPref1.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyWeightPref1.setRequestFocusEnabled(false);
+        bodyWeightPref1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyWeightPref1ActionPerformed(evt);
+            }
+        });
+
+        hairColourPref5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        hairColourPref5.setText("Hair Colour 5");
+        hairColourPref5.setPreferredSize(new java.awt.Dimension(125, 25));
+        hairColourPref5.setRequestFocusEnabled(false);
+        hairColourPref5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hairColourPref5ActionPerformed(evt);
+            }
+        });
+
+        bodyWeightPref3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        bodyWeightPref3.setText("Body Weight 3");
+        bodyWeightPref3.setPreferredSize(new java.awt.Dimension(125, 25));
+        bodyWeightPref3.setRequestFocusEnabled(false);
+        bodyWeightPref3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bodyWeightPref3ActionPerformed(evt);
+            }
+        });
+
+        HeightPref1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        HeightPref1.setText("Height 1");
+        HeightPref1.setPreferredSize(new java.awt.Dimension(125, 25));
+        HeightPref1.setRequestFocusEnabled(false);
+        HeightPref1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HeightPref1ActionPerformed(evt);
+            }
+        });
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel14.setText("Personal");
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel15.setText("Prefered");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(HeightPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(HeightPersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(HeightPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(HeightPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(HeightPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(38, 38, 38)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(HeightPref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(HeightPref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(HeightPref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(HeightPref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(HeightPref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(hairColourPref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(hairColourPref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(hairColourPref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(hairColourPref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(hairColourPref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(backgroundPref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(backgroundPref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(backgroundPref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(backgroundPref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(backgroundPref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(bodyTypePref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyTypePref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyTypePref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyTypePref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyTypePref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(bodyWeightPref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyWeightPref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyWeightPref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyWeightPref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyWeightPref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel3)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(bodyTypePersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(bodyTypePersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(bodyTypePersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(bodyTypePersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(bodyTypePersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(hairColourPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(hairColourPersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(hairColourPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(hairColourPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(hairColourPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(backgroundPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(backgroundPersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(backgroundPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(backgroundPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(backgroundPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(bodyWeightPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(379, 379, 379)
+                        .addComponent(jLabel15))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bodyWeightPersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(HeightPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bodyWeightPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(HeightPersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bodyWeightPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(HeightPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bodyWeightPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                .addComponent(Finished)
-                .addComponent(jLabel7))
+                                .addComponent(HeightPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(HeightPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(bodyTypePersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(bodyTypePersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(bodyTypePersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(bodyTypePersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(bodyTypePersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(hairColourPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(hairColourPersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(hairColourPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(hairColourPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(hairColourPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(backgroundPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(backgroundPersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(backgroundPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(backgroundPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(backgroundPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(bodyWeightPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyWeightPersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyWeightPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyWeightPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bodyWeightPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(355, 355, 355)
+                        .addComponent(Finished, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(388, 388, 388)
+                        .addComponent(jLabel14))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(181, 181, 181)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 909, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(41, 41, 41)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(jLabel14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bodyTypePersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bodyTypePersonal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bodyTypePersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bodyTypePersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bodyTypePersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bodyWeightPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -499,7 +883,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
                     .addComponent(bodyWeightPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bodyWeightPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bodyWeightPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(8, 8, 8)
@@ -512,7 +896,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(hairColourPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))))
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(backgroundPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -520,7 +904,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
                     .addComponent(backgroundPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(backgroundPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(backgroundPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(HeightPersonal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -528,11 +912,59 @@ public class AppearanceQuiz extends javax.swing.JFrame {
                     .addComponent(HeightPersonal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(HeightPersonal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(HeightPersonal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bodyTypePref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bodyTypePref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bodyTypePref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bodyTypePref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bodyTypePref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bodyWeightPref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bodyWeightPref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bodyWeightPref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bodyWeightPref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bodyWeightPref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(hairColourPref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hairColourPref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hairColourPref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hairColourPref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(hairColourPref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(backgroundPref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backgroundPref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backgroundPref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backgroundPref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backgroundPref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(HeightPref1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(HeightPref2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(HeightPref3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(HeightPref4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(HeightPref5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 281, Short.MAX_VALUE)
-                .addComponent(Finished))
+                .addComponent(Finished)
+                .addGap(52, 52, 52))
         );
 
         pack();
@@ -540,7 +972,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void bodyTypePersonal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePersonal1ActionPerformed
         bodyTypePersonal = 1;
-        System.out.println("it works!!!");
+
     }//GEN-LAST:event_bodyTypePersonal1ActionPerformed
 
     private void bodyTypePersonal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePersonal4ActionPerformed
@@ -600,31 +1032,31 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_hairColourPersonal3ActionPerformed
 
     private void backgroundPersonal5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal5ActionPerformed
-       backgroundPersonal = 5;
+        backgroundPersonal = 5;
     }//GEN-LAST:event_backgroundPersonal5ActionPerformed
 
     private void backgroundPersonal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal4ActionPerformed
-      backgroundPersonal = 4;
+        backgroundPersonal = 4;
     }//GEN-LAST:event_backgroundPersonal4ActionPerformed
 
     private void backgroundPersonal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal2ActionPerformed
-    backgroundPersonal = 2;
+        backgroundPersonal = 2;
     }//GEN-LAST:event_backgroundPersonal2ActionPerformed
 
     private void backgroundPersonal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal1ActionPerformed
-     backgroundPersonal = 1;
+        backgroundPersonal = 1;
     }//GEN-LAST:event_backgroundPersonal1ActionPerformed
 
     private void backgroundPersonal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal3ActionPerformed
-     backgroundPersonal = 3;
+        backgroundPersonal = 3;
     }//GEN-LAST:event_backgroundPersonal3ActionPerformed
 
     private void bodyWeightPersonal5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal5ActionPerformed
-     bodyWeightPersonal = 5;
+        bodyWeightPersonal = 5;
     }//GEN-LAST:event_bodyWeightPersonal5ActionPerformed
 
     private void bodyWeightPersonal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal4ActionPerformed
-      bodyWeightPersonal = 4;
+        bodyWeightPersonal = 4;
     }//GEN-LAST:event_bodyWeightPersonal4ActionPerformed
 
     private void bodyWeightPersonal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal2ActionPerformed
@@ -632,21 +1064,139 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_bodyWeightPersonal2ActionPerformed
 
     private void bodyWeightPersonal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal1ActionPerformed
-       bodyWeightPersonal = 1;
+        bodyWeightPersonal = 1;
     }//GEN-LAST:event_bodyWeightPersonal1ActionPerformed
 
     private void bodyWeightPersonal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal3ActionPerformed
-       bodyWeightPersonal = 3;
+        bodyWeightPersonal = 3;
     }//GEN-LAST:event_bodyWeightPersonal3ActionPerformed
 
     private void FinishedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinishedActionPerformed
-    String personalAppearanceInfo = (bodyTypePersonal + "," + bodyWeightPersonal +  "," + hairColPersonal + "," + backgroundPersonal + "," + heightPersonal);
-    System.out.println(personalAppearanceInfo);
-        //check the field for personality and looks are both numbers
-       
-        
-       
+
+        // if any of the info field are blank
+        if (check(bodyTypePersonal) || check(bodyWeightPersonal) || check(hairColPersonal) || check(backgroundPersonal) || check(heightPersonal) || check(bodyTypePref) || check(bodyWeightPref) || check(hairColPref) || check(backgroundPref) || check(heightPref)) {
+            // diplay a message telling the user to fill in the field
+            JOptionPane.showMessageDialog(this, "Please ensure all field are filled in correctly", "Registration", JOptionPane.PLAIN_MESSAGE);
+        } else {
+            String appearanceInfo = (bodyTypePersonal + "," + bodyWeightPersonal + "," + hairColPersonal + "," + backgroundPersonal + "," + heightPersonal + ";" + bodyTypePref + "," + bodyWeightPref + "," + hairColPref + "," + backgroundPref + "," + heightPref);
+            System.out.println(appearanceInfo);
+            new Menu().setVisible(true);
+        }
+
+
     }//GEN-LAST:event_FinishedActionPerformed
+
+    private void backgroundPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPref5ActionPerformed
+        backgroundPref = 5;
+    }//GEN-LAST:event_backgroundPref5ActionPerformed
+
+    private void hairColourPref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref3ActionPerformed
+        hairColPref = 3;
+    }//GEN-LAST:event_hairColourPref3ActionPerformed
+
+    private void hairColourPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref1ActionPerformed
+        hairColPref = 1;
+    }//GEN-LAST:event_hairColourPref1ActionPerformed
+
+    private void hairColourPref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref2ActionPerformed
+        hairColPref = 2;
+    }//GEN-LAST:event_hairColourPref2ActionPerformed
+
+    private void hairColourPref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref4ActionPerformed
+        hairColPref = 4;
+    }//GEN-LAST:event_hairColourPref4ActionPerformed
+
+    private void backgroundPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPref1ActionPerformed
+        backgroundPref = 1;
+    }//GEN-LAST:event_backgroundPref1ActionPerformed
+
+    private void backgroundPref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPref3ActionPerformed
+        backgroundPref = 3;
+    }//GEN-LAST:event_backgroundPref3ActionPerformed
+
+    private void backgroundPref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPref4ActionPerformed
+        backgroundPref = 4;
+    }//GEN-LAST:event_backgroundPref4ActionPerformed
+
+    private void backgroundPref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPref2ActionPerformed
+        backgroundPref = 2;
+    }//GEN-LAST:event_backgroundPref2ActionPerformed
+
+    private void HeightPref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref2ActionPerformed
+        heightPref = 2;
+    }//GEN-LAST:event_HeightPref2ActionPerformed
+
+    private void bodyTypePref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref5ActionPerformed
+        bodyTypePref = 5;
+    }//GEN-LAST:event_bodyTypePref5ActionPerformed
+
+    private void bodyWeightPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref5ActionPerformed
+        bodyWeightPref = 5;
+    }//GEN-LAST:event_bodyWeightPref5ActionPerformed
+
+    private void bodyTypePref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref2ActionPerformed
+        bodyTypePref = 2;
+    }//GEN-LAST:event_bodyTypePref2ActionPerformed
+
+    private void bodyTypePref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref1ActionPerformed
+        bodyTypePref = 1;
+    }//GEN-LAST:event_bodyTypePref1ActionPerformed
+
+    private void bodyTypePref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref4ActionPerformed
+        bodyTypePref = 4;
+    }//GEN-LAST:event_bodyTypePref4ActionPerformed
+
+    private void bodyTypePref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref3ActionPerformed
+        bodyTypePref = 3;
+    }//GEN-LAST:event_bodyTypePref3ActionPerformed
+
+    private void HeightPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref5ActionPerformed
+        heightPref = 5;
+    }//GEN-LAST:event_HeightPref5ActionPerformed
+
+    private void bodyWeightPref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref4ActionPerformed
+        bodyWeightPref = 4;
+    }//GEN-LAST:event_bodyWeightPref4ActionPerformed
+
+    private void HeightPref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref4ActionPerformed
+        heightPref = 4;
+    }//GEN-LAST:event_HeightPref4ActionPerformed
+
+    private void bodyWeightPref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref2ActionPerformed
+        bodyWeightPref = 2;
+    }//GEN-LAST:event_bodyWeightPref2ActionPerformed
+
+    private void HeightPref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref3ActionPerformed
+        heightPref = 3;
+    }//GEN-LAST:event_HeightPref3ActionPerformed
+
+    private void bodyWeightPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref1ActionPerformed
+        bodyWeightPref = 1;
+    }//GEN-LAST:event_bodyWeightPref1ActionPerformed
+
+    private void hairColourPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref5ActionPerformed
+        hairColPref = 5;
+    }//GEN-LAST:event_hairColourPref5ActionPerformed
+
+    private void bodyWeightPref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref3ActionPerformed
+        bodyWeightPref = 3;
+    }//GEN-LAST:event_bodyWeightPref3ActionPerformed
+
+    private void HeightPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref1ActionPerformed
+        heightPref = 1;
+    }//GEN-LAST:event_HeightPref1ActionPerformed
+    private boolean check(int object) {
+
+        // if the field is empty
+        if (object == 0) {
+            // return true (yes it is empty)
+
+            return true;
+        }
+        // if the field is not empty return false
+        return false;
+
+    }
 
     /**
      * @param args the command line arguments
@@ -690,33 +1240,65 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     private javax.swing.JButton HeightPersonal3;
     private javax.swing.JButton HeightPersonal4;
     private javax.swing.JButton HeightPersonal5;
+    private javax.swing.JButton HeightPref1;
+    private javax.swing.JButton HeightPref2;
+    private javax.swing.JButton HeightPref3;
+    private javax.swing.JButton HeightPref4;
+    private javax.swing.JButton HeightPref5;
     private javax.swing.JButton backgroundPersonal1;
     private javax.swing.JButton backgroundPersonal2;
     private javax.swing.JButton backgroundPersonal3;
     private javax.swing.JButton backgroundPersonal4;
     private javax.swing.JButton backgroundPersonal5;
+    private javax.swing.JButton backgroundPref1;
+    private javax.swing.JButton backgroundPref2;
+    private javax.swing.JButton backgroundPref3;
+    private javax.swing.JButton backgroundPref4;
+    private javax.swing.JButton backgroundPref5;
     private javax.swing.JButton bodyTypePersonal1;
     private javax.swing.JButton bodyTypePersonal2;
     private javax.swing.JButton bodyTypePersonal3;
     private javax.swing.JButton bodyTypePersonal4;
     private javax.swing.JButton bodyTypePersonal5;
+    private javax.swing.JButton bodyTypePref1;
+    private javax.swing.JButton bodyTypePref2;
+    private javax.swing.JButton bodyTypePref3;
+    private javax.swing.JButton bodyTypePref4;
+    private javax.swing.JButton bodyTypePref5;
     private javax.swing.JButton bodyWeightPersonal1;
     private javax.swing.JButton bodyWeightPersonal2;
     private javax.swing.JButton bodyWeightPersonal3;
     private javax.swing.JButton bodyWeightPersonal4;
     private javax.swing.JButton bodyWeightPersonal5;
+    private javax.swing.JButton bodyWeightPref1;
+    private javax.swing.JButton bodyWeightPref2;
+    private javax.swing.JButton bodyWeightPref3;
+    private javax.swing.JButton bodyWeightPref4;
+    private javax.swing.JButton bodyWeightPref5;
     private javax.swing.JButton hairColourPersonal1;
     private javax.swing.JButton hairColourPersonal2;
     private javax.swing.JButton hairColourPersonal3;
     private javax.swing.JButton hairColourPersonal4;
     private javax.swing.JButton hairColourPersonal5;
+    private javax.swing.JButton hairColourPref1;
+    private javax.swing.JButton hairColourPref2;
+    private javax.swing.JButton hairColourPref3;
+    private javax.swing.JButton hairColourPref4;
+    private javax.swing.JButton hairColourPref5;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
-}
 
+}

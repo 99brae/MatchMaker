@@ -29,7 +29,9 @@ public class LogIn extends javax.swing.JFrame {
     static public String fileSID;
     /**
      * Creates new form LogIn
-*/
+     */
+    person log = new person();
+    
     public LogIn() {
         initComponents();
          // Set the screen size to 580 x 500
@@ -117,6 +119,7 @@ public class LogIn extends javax.swing.JFrame {
      */
     private void openRegScreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openRegScreenActionPerformed
         // hide the log in screen
+        log.user = userName.getText();
         setVisible(false);
         // open the resitration screen
         new Registration().setVisible(true);

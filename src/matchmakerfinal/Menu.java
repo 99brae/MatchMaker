@@ -52,6 +52,11 @@ public class Menu extends javax.swing.JFrame {
         looksQuiz.setBounds(550, 350, 150, 40);
 
         personalityQuiz.setText("Take Quiz");
+        personalityQuiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                personalityQuizActionPerformed(evt);
+            }
+        });
         getContentPane().add(personalityQuiz);
         personalityQuiz.setBounds(550, 450, 150, 30);
 
@@ -71,6 +76,11 @@ public class Menu extends javax.swing.JFrame {
         setVisible(false);
         new General().setVisible(true);
     }//GEN-LAST:event_genInfoQuizActionPerformed
+
+    private void personalityQuizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personalityQuizActionPerformed
+       setVisible(false);
+       new AppearanceQuiz().setVisible(true);
+    }//GEN-LAST:event_personalityQuizActionPerformed
 
     /**
      * @param args the command line arguments
