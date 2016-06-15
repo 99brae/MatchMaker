@@ -47,6 +47,11 @@ public class Menu extends javax.swing.JFrame {
         genInfoQuiz.setBounds(540, 250, 160, 30);
 
         looksQuiz.setText("Take Quiz");
+        looksQuiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                looksQuizActionPerformed(evt);
+            }
+        });
         getContentPane().add(looksQuiz);
         looksQuiz.setBounds(550, 350, 150, 40);
 
@@ -69,6 +74,12 @@ public class Menu extends javax.swing.JFrame {
         setVisible(false);
         new General().setVisible(true);
     }//GEN-LAST:event_genInfoQuizActionPerformed
+
+    private void looksQuizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_looksQuizActionPerformed
+        // TODO add your handling code here:
+         setVisible(false);
+        new PersonalityQuiz().setVisible(true);
+    }//GEN-LAST:event_looksQuizActionPerformed
 
     /**
      * @param args the command line arguments
