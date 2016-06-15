@@ -77,10 +77,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 //        hairColourPersonal5.setOpaque(false);
 //        hairColourPersonal5.setContentAreaFilled(false);
 //        hairColourPersonal5.setBorderPainted(false);
-        
-       
-       
-        
+
     }
 
     /**
@@ -975,7 +972,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void bodyTypePersonal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePersonal1ActionPerformed
         bodyTypePersonal = 1;
-        
+
     }//GEN-LAST:event_bodyTypePersonal1ActionPerformed
 
     private void bodyTypePersonal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePersonal4ActionPerformed
@@ -1035,31 +1032,31 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_hairColourPersonal3ActionPerformed
 
     private void backgroundPersonal5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal5ActionPerformed
-       backgroundPersonal = 5;
+        backgroundPersonal = 5;
     }//GEN-LAST:event_backgroundPersonal5ActionPerformed
 
     private void backgroundPersonal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal4ActionPerformed
-      backgroundPersonal = 4;
+        backgroundPersonal = 4;
     }//GEN-LAST:event_backgroundPersonal4ActionPerformed
 
     private void backgroundPersonal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal2ActionPerformed
-    backgroundPersonal = 2;
+        backgroundPersonal = 2;
     }//GEN-LAST:event_backgroundPersonal2ActionPerformed
 
     private void backgroundPersonal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal1ActionPerformed
-     backgroundPersonal = 1;
+        backgroundPersonal = 1;
     }//GEN-LAST:event_backgroundPersonal1ActionPerformed
 
     private void backgroundPersonal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal3ActionPerformed
-     backgroundPersonal = 3;
+        backgroundPersonal = 3;
     }//GEN-LAST:event_backgroundPersonal3ActionPerformed
 
     private void bodyWeightPersonal5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal5ActionPerformed
-     bodyWeightPersonal = 5;
+        bodyWeightPersonal = 5;
     }//GEN-LAST:event_bodyWeightPersonal5ActionPerformed
 
     private void bodyWeightPersonal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal4ActionPerformed
-      bodyWeightPersonal = 4;
+        bodyWeightPersonal = 4;
     }//GEN-LAST:event_bodyWeightPersonal4ActionPerformed
 
     private void bodyWeightPersonal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal2ActionPerformed
@@ -1067,29 +1064,26 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_bodyWeightPersonal2ActionPerformed
 
     private void bodyWeightPersonal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal1ActionPerformed
-       bodyWeightPersonal = 1;
+        bodyWeightPersonal = 1;
     }//GEN-LAST:event_bodyWeightPersonal1ActionPerformed
 
     private void bodyWeightPersonal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal3ActionPerformed
-       bodyWeightPersonal = 3;
+        bodyWeightPersonal = 3;
     }//GEN-LAST:event_bodyWeightPersonal3ActionPerformed
 
     private void FinishedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinishedActionPerformed
-    
+
         // if any of the info field are blank
-        if (check(bodyTypePersonal) || check(bodyWeightPersonal)|| check(hairColPersonal) || check(backgroundPersonal) || check(heightPersonal) || check(bodyTypePref) || check(bodyWeightPref) || check(hairColPref) || check(backgroundPref)|| check(heightPref)) {
+        if (check(bodyTypePersonal) || check(bodyWeightPersonal) || check(hairColPersonal) || check(backgroundPersonal) || check(heightPersonal) || check(bodyTypePref) || check(bodyWeightPref) || check(hairColPref) || check(backgroundPref) || check(heightPref)) {
             // diplay a message telling the user to fill in the field
             JOptionPane.showMessageDialog(this, "Please ensure all field are filled in correctly", "Registration", JOptionPane.PLAIN_MESSAGE);
+        } else {
+            String appearanceInfo = (bodyTypePersonal + "," + bodyWeightPersonal + "," + hairColPersonal + "," + backgroundPersonal + "," + heightPersonal + ";" + bodyTypePref + "," + bodyWeightPref + "," + hairColPref + "," + backgroundPref + "," + heightPref);
+            System.out.println(appearanceInfo);
+            new Menu().setVisible(true);
         }
-            else {
-    String appearanceInfo = (bodyTypePersonal + "," + bodyWeightPersonal +  "," + hairColPersonal + "," + backgroundPersonal + "," + heightPersonal + ";" + bodyTypePref + "," + bodyWeightPref + "," + hairColPref + "," + backgroundPref + "," + heightPref);
-    System.out.println(appearanceInfo);
-    new Menu().setVisible(true);
-                    }
-        
-       
-        
-       
+
+
     }//GEN-LAST:event_FinishedActionPerformed
 
     private void backgroundPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPref5ActionPerformed
@@ -1097,19 +1091,19 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_backgroundPref5ActionPerformed
 
     private void hairColourPref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref3ActionPerformed
-       hairColPref = 3;
+        hairColPref = 3;
     }//GEN-LAST:event_hairColourPref3ActionPerformed
 
     private void hairColourPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref1ActionPerformed
-       hairColPref = 1;
+        hairColPref = 1;
     }//GEN-LAST:event_hairColourPref1ActionPerformed
 
     private void hairColourPref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref2ActionPerformed
-       hairColPref = 2;
+        hairColPref = 2;
     }//GEN-LAST:event_hairColourPref2ActionPerformed
 
     private void hairColourPref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref4ActionPerformed
-       hairColPref = 4;
+        hairColPref = 4;
     }//GEN-LAST:event_hairColourPref4ActionPerformed
 
     private void backgroundPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPref1ActionPerformed
@@ -1137,7 +1131,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_bodyTypePref5ActionPerformed
 
     private void bodyWeightPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref5ActionPerformed
-       bodyWeightPref = 5;
+        bodyWeightPref = 5;
     }//GEN-LAST:event_bodyWeightPref5ActionPerformed
 
     private void bodyTypePref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref2ActionPerformed
@@ -1145,7 +1139,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_bodyTypePref2ActionPerformed
 
     private void bodyTypePref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref1ActionPerformed
-       bodyTypePref = 1;
+        bodyTypePref = 1;
     }//GEN-LAST:event_bodyTypePref1ActionPerformed
 
     private void bodyTypePref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref4ActionPerformed
@@ -1157,7 +1151,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_bodyTypePref3ActionPerformed
 
     private void HeightPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref5ActionPerformed
-       heightPref = 5;
+        heightPref = 5;
     }//GEN-LAST:event_HeightPref5ActionPerformed
 
     private void bodyWeightPref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref4ActionPerformed
@@ -1165,7 +1159,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_bodyWeightPref4ActionPerformed
 
     private void HeightPref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref4ActionPerformed
-       heightPref = 4;
+        heightPref = 4;
     }//GEN-LAST:event_HeightPref4ActionPerformed
 
     private void bodyWeightPref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref2ActionPerformed
@@ -1177,7 +1171,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_HeightPref3ActionPerformed
 
     private void bodyWeightPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref1ActionPerformed
-       bodyWeightPref = 1;
+        bodyWeightPref = 1;
     }//GEN-LAST:event_bodyWeightPref1ActionPerformed
 
     private void hairColourPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref5ActionPerformed
@@ -1189,20 +1183,21 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }//GEN-LAST:event_bodyWeightPref3ActionPerformed
 
     private void HeightPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref1ActionPerformed
-       heightPref = 1;
+        heightPref = 1;
     }//GEN-LAST:event_HeightPref1ActionPerformed
     private boolean check(int object) {
-        
+
         // if the field is empty
         if (object == 0) {
             // return true (yes it is empty)
-            
+
             return true;
         }
         // if the field is not empty return false
         return false;
 
     }
+
     /**
      * @param args the command line arguments
      */
