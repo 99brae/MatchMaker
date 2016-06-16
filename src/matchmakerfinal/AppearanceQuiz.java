@@ -1184,6 +1184,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         } else {
             String appearanceInfo = (bodyTypePersonal + "," + bodyWeightPersonal + "," + hairColPersonal + "," + backgroundPersonal + "," + heightPersonal + ";" + bodyTypePref + "," + bodyWeightPref + "," + hairColPref + "," + backgroundPref + "," + heightPref);
             System.out.println(appearanceInfo);
+            Appearance appearance = new Appearance(bodyTypePersonal, bodyWeightPersonal, hairColPersonal, backgroundPersonal,heightPersonal , bodyTypePref ,bodyWeightPref ,hairColPref  ,backgroundPref  ,heightPref);
             new Menu().setVisible(true);
         }
 
