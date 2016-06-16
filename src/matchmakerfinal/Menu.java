@@ -16,6 +16,7 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
+        // set the size of the screen to 1100 x 950
         setSize(1100, 950);
     }
 
@@ -56,6 +57,11 @@ public class Menu extends javax.swing.JFrame {
         looksQuiz.setBounds(550, 350, 150, 40);
 
         personalityQuiz.setText("Take Quiz");
+        personalityQuiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                personalityQuizActionPerformed(evt);
+            }
+        });
         getContentPane().add(personalityQuiz);
         personalityQuiz.setBounds(550, 450, 150, 30);
 
@@ -71,15 +77,15 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void genInfoQuizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genInfoQuizActionPerformed
+        // if the user click the general quiz button open up the general quiz
         setVisible(false);
         new General().setVisible(true);
     }//GEN-LAST:event_genInfoQuizActionPerformed
 
-    private void looksQuizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_looksQuizActionPerformed
-        // TODO add your handling code here:
-         setVisible(false);
-        new PersonalityQuiz().setVisible(true);
-    }//GEN-LAST:event_looksQuizActionPerformed
+    private void personalityQuizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personalityQuizActionPerformed
+       setVisible(false);
+       new AppearanceQuiz().setVisible(true);
+    }//GEN-LAST:event_personalityQuizActionPerformed
 
     /**
      * @param args the command line arguments

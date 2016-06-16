@@ -32,6 +32,8 @@ String passwordAsString;
         initComponents();
         // Set the screen size to 700 by 600
         setSize(1016, 699);
+     
+       
     }
 
     /**
@@ -84,10 +86,10 @@ String passwordAsString;
         // Get the length of the file
         int fileSize = getLength();
         // Create a String array of size fileSize to store the bad passwords
-
         String[] badPasswords = new String[fileSize];
         // here will be used to run through the array of bad pws
         int here = 0;
+        // file of bas passwords to be compared to
         File x = new File("dictbadpass.txt");
         Scanner s = null;
         try {
@@ -95,7 +97,6 @@ String passwordAsString;
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
         }
-
         // While you have no yet reached the end of the file
         while (s.hasNextLine()) {
             // store the next line in the file 
@@ -105,18 +106,20 @@ String passwordAsString;
             // increase fileSize by one to move to the next array element
             here++;
         }
+        // sort the array of bas passwords
         Arrays.sort(badPasswords);
+        // using a binary search, check to see if the entered password matches any 
+        //in the file (will return -1 if it does NOT match)
         if (Arrays.binarySearch(badPasswords,passwordAsString) < 0){
+            // the password is not listed in the bad password file, the user passes this condition
         return false;
         }
-          return true;
-             
-        
-       
-    }
+        // the users password is not strong enough
+          return true;               
+       }
     
      /**
-     * This method is used to ensure the user is entering an original username
+     * This method is used to ensure the user is entering an original username (or Student ID)
      * If the username has been used before the user will be asked to choose another
      *
      * @ param obj - none
@@ -126,7 +129,7 @@ String passwordAsString;
     private boolean originalUN(){
       // String to store each line in the file
       String user = null;
-      // The file of data previously entered and stored         
+      // The file of previously entered user info (SID and pw)   
       File f = new File ("user.txt");
       Scanner s = null;
         try {            
@@ -136,7 +139,7 @@ String passwordAsString;
             while (s.hasNextLine()){
             // Store the current line in user
             user = s.nextLine();
-            // Split the line into 4 parts (us, pw, fn, and ln)
+            // Split the line into 2 parts (SID and pw)
             String[] sa = user.split(",");     
             // if the username entered by the user matches one of those previously entered
             if (userName.getText().equals(sa[0])){
@@ -155,7 +158,7 @@ String passwordAsString;
         } catch (HeadlessException ex) {
             Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return true;    
+        return true;   
     }
     
      /**
@@ -167,8 +170,7 @@ String passwordAsString;
     private int getLength () {
         // this var will be used to store the size of the file (to create the array)
         int fileSize = 0;
-        // The file of bad passwords
-        
+        // The file of bad passwords        
         File x = new File("dictbadpass.txt");
         Scanner s = null;
         try {
@@ -180,6 +182,7 @@ String passwordAsString;
         while (s.hasNextLine()) {
             // increase the var that stores the file size by 1
             fileSize++;
+            // move to next line
             s.nextLine();
         } 
         // return the size of the file6
@@ -193,16 +196,13 @@ String passwordAsString;
      *          - false if the field is not empty
      */
     private boolean check(String text) {
-        System.out.println("This is the pw" + text);
         // if the field is empty
         if (text.isEmpty()) {
-            // return true (yes it is empty)
-            
+            // return true (yes it is empty)            
             return true;
         }
         // if the field is not empty return false
         return false;
-
     }
 
      /**
@@ -215,36 +215,37 @@ String passwordAsString;
      * @ return - none
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // var to store the password
         passwordAsString = "";
+        // run through the password enetered (is an array of chars)
         for (int i = 0; i < password.getPassword().length; i++){
+             // store as a string
              passwordAsString = passwordAsString + password.getPassword()[i];
         }
-       System.out.println(passwordAsString);
         // if any of the info field are blank
         if (check(userName.getText()) || check(passwordAsString)) {
             // diplay a message telling the user to fill in the field
             JOptionPane.showMessageDialog(this, "Please ensure all field are filled in correctly", "Registration", JOptionPane.PLAIN_MESSAGE);
-       
         }
         // otherwise, check to make sure a valid student ID has been entered
         else if (studentID()){
            // is the entered un a student ID?
             JOptionPane.showMessageDialog(this, "Please ensure the correct student ID has been entered", "Student ID", JOptionPane.PLAIN_MESSAGE);
-          
         }
          // otherwise, check to make sure the password is strong
         else if (compare()) {
-            // if it is weak, display a mesasge to convey such
+            // if it is weak, display a message to convey such
             JOptionPane.showMessageDialog(this, "The password entered is not strong enough", "Password", JOptionPane.PLAIN_MESSAGE);
         // otherwise, check to make sure the username is original    
         } else if (originalUN()) {
+            // if it is not original, display a message indicating such
             JOptionPane.showMessageDialog(this, "This username is already in use. Please choose another", "Register", JOptionPane.PLAIN_MESSAGE);
         }
         // if it meets the above conditions,
         else {
             PrintWriter pw = null;
             try {
-                // create file for info to be stored
+                // file for info to be stored
                 File f = new File("user.txt");
                 // create a PrintWriter that will append the file (will add to it as apppose to overwrite)
                 pw = new PrintWriter(new FileWriter(f, true));
@@ -257,6 +258,7 @@ String passwordAsString;
             } finally {
                 // close the print writer, hide this screen, and set the login screen to visible
                 pw.close();
+                // open up the log in screen
                 setVisible(false);
                 new LogIn().setVisible(true);
             }
