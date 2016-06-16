@@ -420,7 +420,7 @@ public class PersonalityQuiz extends javax.swing.JPanel {
         log.when = jTextField4.getText();
         log.what = jTextField5.getText();
         
-        
+        log.person();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

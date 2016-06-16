@@ -30,9 +30,9 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         genInfoQuiz = new javax.swing.JButton();
-        looksQuiz = new javax.swing.JButton();
         personalityQuiz = new javax.swing.JButton();
         calculate = new javax.swing.JButton();
+        looksQuiz = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,15 +47,6 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(genInfoQuiz);
         genInfoQuiz.setBounds(540, 250, 160, 30);
 
-        looksQuiz.setText("Take Quiz");
-        looksQuiz.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                looksQuizActionPerformed(evt);
-            }
-        });
-        getContentPane().add(looksQuiz);
-        looksQuiz.setBounds(550, 350, 150, 40);
-
         personalityQuiz.setText("Take Quiz");
         personalityQuiz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,6 +59,15 @@ public class Menu extends javax.swing.JFrame {
         calculate.setText("Calculate!");
         getContentPane().add(calculate);
         calculate.setBounds(900, 560, 110, 60);
+
+        looksQuiz.setText("Take Quiz");
+        looksQuiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                looksQuizActionPerformed(evt);
+            }
+        });
+        getContentPane().add(looksQuiz);
+        looksQuiz.setBounds(550, 350, 150, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matchmakerfinal/Menu.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -84,8 +84,13 @@ public class Menu extends javax.swing.JFrame {
 
     private void personalityQuizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personalityQuizActionPerformed
        setVisible(false);
-       new AppearanceQuiz().setVisible(true);
+       new personality().setVisible(true);
     }//GEN-LAST:event_personalityQuizActionPerformed
+
+    private void looksQuizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_looksQuizActionPerformed
+        setVisible(false);
+       new AppearanceQuiz().setVisible(true);
+    }//GEN-LAST:event_looksQuizActionPerformed
 
     /**
      * @param args the command line arguments
