@@ -183,7 +183,7 @@ public class LogIn extends javax.swing.JFrame {
               System.out.println("IT WORKS");
         try {
             if (userName.getText().equals("ADMIN") && encrypt().equals("7719653DDE352CA76EE01E8898B68C2343DF60FAEACC8EC0F1BE132AD03B56A8")){
-                
+             System.out.println("this works too!!!!");
             }   } catch (Exception ex) {
             Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
         }
