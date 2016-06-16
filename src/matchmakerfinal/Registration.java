@@ -283,7 +283,7 @@ String passwordAsString;
       * @ param obj - String (the password)
      * @ return - byte[] the array of hash encryption
      */
-    public static byte[] computeHash(String x)
+    public static byte[] computeHash(String x) 
             throws Exception {
         java.security.MessageDigest n = null;
         n = java.security.MessageDigest.getInstance("SHA-256");
