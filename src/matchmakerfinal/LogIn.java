@@ -158,7 +158,7 @@ public class LogIn extends javax.swing.JFrame {
             if (userName.getText().equals(sa[0]) && encrypt().equals(sa[1])){
              // store the user name in a globel var to be accessed from quizes
              fileSID = sa[0]; 
-             log.user = fileSID;
+             log.setUser(fileSID);
              
                 // The user has logged in, set the menu screen to visable
                  setVisible(false);
