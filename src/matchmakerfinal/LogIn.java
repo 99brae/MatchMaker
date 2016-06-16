@@ -27,6 +27,7 @@ import static matchmakerfinal.Registration.computeHash;
  */
 public class LogIn extends javax.swing.JFrame {
     static public String fileSID;
+    //public int Submit;
     /**
      * Creates new form LogIn
      */
@@ -157,6 +158,24 @@ public class LogIn extends javax.swing.JFrame {
              fileSID = sa[0];
                 // The user has logged in, set the menu screen to visable
                  setVisible(false);
+                 
+                 File x = new File("readyToCalc.txt");
+        try {            
+            s = new Scanner (x);
+            // While you have not reached the end of the file
+            while (s.hasNextLine()){
+            // move to next line
+                if (s.nextLine().equals("calculate")){
+                 new Results().setVisible(true);   
+                 return;
+                }
+           
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+        }
                  new Menu().setVisible(true);
                 break;
             }
@@ -183,7 +202,8 @@ public class LogIn extends javax.swing.JFrame {
               System.out.println("IT WORKS");
         try {
             if (userName.getText().equals("ADMIN") && encrypt().equals("7719653DDE352CA76EE01E8898B68C2343DF60FAEACC8EC0F1BE132AD03B56A8")){
-             System.out.println("this works too!!!!");
+     setVisible(false);
+                 new Admin().setVisible(true);
             }   } catch (Exception ex) {
             Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
         }
