@@ -6,6 +6,9 @@
 package matchmakerfinal;
 
 import java.awt.Color;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
@@ -1182,9 +1185,13 @@ public class AppearanceQuiz extends javax.swing.JFrame {
             // diplay a message telling the user to fill in the field
             JOptionPane.showMessageDialog(this, "Please ensure all field are filled in correctly", "Registration", JOptionPane.PLAIN_MESSAGE);
         } else {
-            String appearanceInfo = (bodyTypePersonal + "," + bodyWeightPersonal + "," + hairColPersonal + "," + backgroundPersonal + "," + heightPersonal + ";" + bodyTypePref + "," + bodyWeightPref + "," + hairColPref + "," + backgroundPref + "," + heightPref);
-            System.out.println(appearanceInfo);
-            new Menu().setVisible(true);
+            try {
+                Appearance appearance = new Appearance(bodyTypePersonal, bodyWeightPersonal, hairColPersonal, backgroundPersonal, heightPersonal, bodyTypePref, bodyWeightPref, hairColPref, backgroundPref, heightPref);
+            } catch (IOException ex) {
+                Logger.getLogger(AppearanceQuiz.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        //close printwriter);
+          new Menu().setVisible(true);
         }
 
 
