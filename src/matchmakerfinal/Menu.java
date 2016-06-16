@@ -48,6 +48,11 @@ public class Menu extends javax.swing.JFrame {
         genInfoQuiz.setBounds(540, 250, 160, 30);
 
         looksQuiz.setText("Take Quiz");
+        looksQuiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                looksQuizActionPerformed(evt);
+            }
+        });
         getContentPane().add(looksQuiz);
         looksQuiz.setBounds(550, 350, 150, 40);
 
