@@ -19,6 +19,7 @@ public class User {
     public String[] LFGender;
     public String[] LFGrade;
     
+    
     public User(String info) {
         String[] user = info.split(",");
         FN = user[0];
