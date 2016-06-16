@@ -387,28 +387,28 @@ public class PersonalityQuiz extends javax.swing.JPanel {
         }
         
         if(jCheckBox5.isSelected()){
-             log.sport = "non-fiction";
+             log.read = "non-fiction";
         }
         
         if(jCheckBox6.isSelected()){
-             log.sport = "adventure";
+             log.read = "adventure";
         }
         
         if(jCheckBox7.isSelected()){
-             log.sport = "manga";
+             log.read = "manga";
         }
         
         if(jCheckBox8.isSelected()){
-             log.sport = jTextField2.getText();
+             log.read = jTextField2.getText();
         }
         if(jCheckBox9.isSelected()){
-             log.sport = "travelling";
+             log.vaca = "travelling";
         }
         if(jCheckBox10.isSelected()){
-             log.sport = "relaxation";
+             log.vaca = "relaxation";
         }
         if(jCheckBox11.isSelected()){
-             log.sport = "history";
+             log.vaca = "history";
         }
         
         log.besttrait = (String) jComboBox1.getSelectedItem();
@@ -419,6 +419,7 @@ public class PersonalityQuiz extends javax.swing.JPanel {
         log.where = jTextField3.getText();
         log.when = jTextField4.getText();
         log.what = jTextField5.getText();
+        
         
         log.person();
         

@@ -119,7 +119,6 @@ public class LogIn extends javax.swing.JFrame {
      */
     private void openRegScreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openRegScreenActionPerformed
         // hide the log in screen
-        log.user = userName.getText();
         setVisible(false);
         // open the resitration screen
         new Registration().setVisible(true);
@@ -127,6 +126,8 @@ public class LogIn extends javax.swing.JFrame {
 
     private void userNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameActionPerformed
         // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_userNameActionPerformed
 
        
@@ -138,7 +139,9 @@ public class LogIn extends javax.swing.JFrame {
      * @ return - none
      */
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-        // String to store current line from the file
+       
+        
+// String to store current line from the file
         String user = null;
         // The file containing the users and their passwords
           File f = new File ("user.txt");
@@ -154,7 +157,9 @@ public class LogIn extends javax.swing.JFrame {
             // if the username and password match the one previously stored
             if (userName.getText().equals(sa[0]) && encrypt().equals(sa[1])){
              // store the user name in a globel var to be accessed from quizes
-             fileSID = sa[0];
+             fileSID = sa[0]; 
+             log.user = fileSID;
+             
                 // The user has logged in, set the menu screen to visable
                  setVisible(false);
                  new Menu().setVisible(true);
@@ -171,6 +176,8 @@ public class LogIn extends javax.swing.JFrame {
         } catch (Exception ex) {
             Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
         }        
+        
+           
     }//GEN-LAST:event_loginActionPerformed
 
     
@@ -249,6 +256,6 @@ public class LogIn extends javax.swing.JFrame {
     private javax.swing.JButton login;
     private javax.swing.JButton openRegScreen;
     private javax.swing.JPasswordField password;
-    private javax.swing.JTextField userName;
+    public javax.swing.JTextField userName;
     // End of variables declaration//GEN-END:variables
 }

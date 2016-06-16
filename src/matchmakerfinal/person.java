@@ -49,9 +49,11 @@ public class person {
             Logger.getLogger(PersonalityQuiz.class.getName()).log(Level.SEVERE, null, ex);
         }
         //write registration info to text file
-            pw.println(user + d + besttrait + d + worsttrait + d + sport + d + read + d + vaca + d + food + night + d + when + d + where + d + what);
+            pw.println(LogIn.fileSID  + d + besttrait + d + worsttrait + d + sport + d + read + d + vaca + d + food + d +  night + d + when + d + where + d + what);
         //close printwriter
             pw.close();
+            
+            System.out.println(user);
   }
     
 }
