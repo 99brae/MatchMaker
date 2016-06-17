@@ -95,8 +95,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
     }
 
     /**
-     * This method is used to set the button colouration to that of a pressed
-     * button
+     * This method is used to set the button coloration to that of a pressed button
      *
      * @ param obj - JButton (the button that is pressed)
      * @ return - void

@@ -393,7 +393,7 @@ public class General extends javax.swing.JFrame {
         else{
            String gradeInterest = arrayToString();
         // store information in String
-        String userInformation = (firstName.getText()+ "," + lastName.getText()+ "," + gender + "," + grade + "," + personality.getText()+ "," + LFGender + "," + gradeInterest);
+        String userInformation = (firstName.getText()+ "," + lastName.getText()+ "," + gender + "," + grade + "," + personality.getText()+ "," + LFGender + "," + gradeInterest + LogIn.fileSID);
         // if the user has not completed the quiz yet
         if (completed() == -1){
             // add the new data to the file
@@ -442,7 +442,7 @@ public class General extends javax.swing.JFrame {
             Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
     }
         // replace the line of data the user has already entered
-        file[completed()-1] = LogIn.fileSID + "," + userInfo;       
+        file[completed()-1] = userInfo;       
         
          PrintWriter pw = null;         
             try {
@@ -482,7 +482,7 @@ public class General extends javax.swing.JFrame {
                 // create a PrintWriter that will append the file (will add to it as apppose to overwrite)
                 pw = new PrintWriter(new FileWriter(f, true));
                 // store the information about the user from the quiz
-                pw.println(LogIn.fileSID + "," + userInfo);                
+                pw.println(userInfo);                
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
             } catch (Exception ex) {

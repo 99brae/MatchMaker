@@ -4,6 +4,11 @@
  * and open the template in the editor.
  */
 package matchmakerfinal;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -15,8 +20,40 @@ public class Results extends javax.swing.JFrame {
      * Creates new form Results
      */
     public Results() {
+          String Secondmatch = "";
+          String thirdMatch = "";
         initComponents();
+        File file = new File ("user.txt");
+        Scanner s = null;
+        try {
+            s = new Scanner (file);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Results.class.getName()).log(Level.SEVERE, null, ex);
+        }
         // get info from array it will contain the user
+        MatchingAlgorithm matching = new MatchingAlgorithm();
+        for (int i = 0; s.hasNext(); i++){
+        if (s.next().equals( matching.appearances[0].userName)) {
+        Secondmatch = s.next();
+        Secondmatch = Secondmatch + s.next();
+       
+        }
+        
+        if (s.next().equals( matching.appearances[0].userName)) {
+        thirdMatch = s.next();
+        thirdMatch = thirdMatch+ s.next();
+        }
+        
+        }
+         match2Name.setText(Secondmatch);
+        System.out.println(Secondmatch);
+        match3Name.setText(thirdMatch);
+        System.out.println(thirdMatch);
+        
+     
+       
+      
+        
         
     }
 

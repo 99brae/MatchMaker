@@ -21,9 +21,9 @@ public class MatchingAlgorithm {
     File file = new File("appearance.txt");
     Scanner s;
     Appearance[] appearances;
-    AppearanceOutput[] output = new AppearanceOutput[appearances.length];
+    Output[] output = new Output[appearances.length];
 
-    public AppearanceOutput[] ewwRelationships() {
+    public Output[] ewwRelationships() {
         try {
             s = new Scanner(file); //f is a file
         } catch (FileNotFoundException ex) {

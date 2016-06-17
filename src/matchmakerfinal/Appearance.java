@@ -28,7 +28,7 @@ int bodyTypePref;
 int hairColPref;
 int backgroundPref;
 int heightPref;
-AppearanceOutput output = new AppearanceOutput();
+Output output = new Output();
 
 public Appearance(String userName,int bodyWeightPersonal,int bodyTypePersonal,int hairColPersonal,int backgroundPersonal,int heightPersonal,int bodyWeightPref,int bodyTypePref,int hairColPref,int backgroundPref,int heightPref) throws IOException {
 this.userName = LogIn.fileSID;

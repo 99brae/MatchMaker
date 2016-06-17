@@ -12,15 +12,15 @@ import static matchmakerfinal.LogIn.fileSID;
  *
  * @author Braedon
  */
-public class AppearanceOutput {
+public class Output {
 int score;
 String userName;
 
-AppearanceOutput(int score, String userName) {
+Output(int score, String userName) {
 this.score = score;   
 this.userName = userName ;
 }
-AppearanceOutput(){
+Output(){
     
 }
 }

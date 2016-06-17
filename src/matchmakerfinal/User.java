@@ -18,6 +18,7 @@ public class User {
     public int weightFactor;
     public String[] LFGender;
     public String[] LFGrade;
+    public String studentID;
     
     
     public User(String info) {
@@ -28,7 +29,9 @@ public class User {
         grade = user[3];
         weightFactor = Integer.parseInt(user[4]);
         LFGender = user[4].split(";");
-        LFGrade = user[5].split(";");            
+        LFGrade = user[5].split(";");
+        studentID = user[6];
+        
     }
     
 }
