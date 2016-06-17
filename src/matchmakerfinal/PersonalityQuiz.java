@@ -5,6 +5,16 @@
  */
 package matchmakerfinal;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.lang.reflect.Array;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 /**
  *
@@ -16,10 +26,21 @@ public class PersonalityQuiz extends javax.swing.JPanel {
      * Creates new form PersonalityQuiz
      */
     
+    // creat person object
     person log = new person();
+    // create array of people
+    person[] people;
+
+//    // create algorithm object
+    algorithm alg = new algorithm();
+//
+//    // import a printwriter
+    PrintWriter pw;
+   
     public PersonalityQuiz() {
         initComponents();
         setSize(1100, 950);
+        
     }
     
     
@@ -69,11 +90,11 @@ public class PersonalityQuiz extends javax.swing.JPanel {
 
         jLabel2.setText("Which of the following would you select as your worst traits?");
 
-        jLabel3.setText("Favourite Sport?");
+        jLabel3.setText("Favourite Sport? (choose one)");
 
-        jLabel4.setText("Do you enjoy reading? If so what genre?");
+        jLabel4.setText("Do you enjoy reading? If so what genre?  (choose one)");
 
-        jLabel5.setText("What do you look for in your Dream Vacation?");
+        jLabel5.setText("What do you look for in your Dream Vacation? (choose one)");
 
         jLabel6.setText("Favorite Food?");
 
@@ -181,11 +202,18 @@ public class PersonalityQuiz extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(59, 59, 59)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jCheckBox5)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel11))
+                        .addGap(104, 104, 104)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(159, 159, 159)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -206,46 +234,43 @@ public class PersonalityQuiz extends javax.swing.JPanel {
                                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(17, 17, 17)
-                                .addComponent(jCheckBox2)
-                                .addGap(39, 39, 39)
-                                .addComponent(jCheckBox3)
-                                .addGap(40, 40, 40)
-                                .addComponent(jCheckBox4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(43, 43, 43)
-                                .addComponent(jCheckBox5))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jCheckBox9)
-                                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jCheckBox6)
-                            .addComponent(jCheckBox10))
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox11)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jCheckBox7)
-                                .addGap(36, 36, 36)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jCheckBox2)
+                                                .addGap(39, 39, 39)
+                                                .addComponent(jCheckBox3)
+                                                .addGap(40, 40, 40)
+                                                .addComponent(jCheckBox4))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jCheckBox9)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jCheckBox10)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jCheckBox11))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jCheckBox6)
+                                        .addGap(30, 30, 30)
+                                        .addComponent(jCheckBox7)
+                                        .addGap(33, 33, 33)
                                         .addComponent(jCheckBox8)
                                         .addGap(18, 18, 18)
                                         .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                    .addComponent(jLabel4)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel9))
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -292,24 +317,16 @@ public class PersonalityQuiz extends javax.swing.JPanel {
                     .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(37, 37, 37)
                 .addComponent(jLabel9)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel11)
-                            .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47))))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11))
+                .addGap(33, 33, 33))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -351,58 +368,195 @@ public class PersonalityQuiz extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if(jCheckBox1.isSelected()){
-            log.setSport("basketball");
+      // declare variables based on information provided
+        if (jCheckBox1.isSelected()) {
+            log.sport = ("basketball");
         }
-        
-        if(jCheckBox2.isSelected()){
-             log.setSport("tennis");
+
+        if (jCheckBox2.isSelected()) {
+            log.sport = ("tennis");
         }
-        if(jCheckBox3.isSelected()){
-             log.setSport("soccer");
+        if (jCheckBox3.isSelected()) {
+            log.sport = ("soccer");
         }
-        
-        if(jCheckBox4.isSelected()){
-             log.setSport(jTextField1.getText());
+
+        if (jCheckBox4.isSelected()) {
+            log.sport = (jTextField1.getText());
         }
-        
-        if(jCheckBox5.isSelected()){
-             log.setRead("non-fiction");
+
+        if (jCheckBox5.isSelected()) {
+            log.read = ("non-fiction");
         }
-        
-        if(jCheckBox6.isSelected()){
-             log.setRead("adventure");
+
+        if (jCheckBox6.isSelected()) {
+            log.read = ("adventure");
         }
-        
-        if(jCheckBox7.isSelected()){
-             log.setRead("manga");
+
+        if (jCheckBox7.isSelected()) {
+            log.read = ("manga");
         }
-        
-        if(jCheckBox8.isSelected()){
-             log.setRead(jTextField2.getText());
+
+        if (jCheckBox8.isSelected()) {
+            log.read = (jTextField2.getText());
         }
-        if(jCheckBox9.isSelected()){
-             log.setVaca("travelling");
+        if (jCheckBox9.isSelected()) {
+            log.vaca = ("travelling");
         }
-        if(jCheckBox10.isSelected()){
-             log.setVaca("relaxation");
+        if (jCheckBox10.isSelected()) {
+            log.vaca = ("relaxation");
         }
-        if(jCheckBox11.isSelected()){
-             log.setVaca("history");
+        if (jCheckBox11.isSelected()) {
+            log.vaca = ("history");
         }
-        
-        log.setBesttrait((String) jComboBox1.getSelectedItem());
-        log.setWorsttrait((String) jComboBox2.getSelectedItem());
-        log.setFood((String) jComboBox3.getSelectedItem());
-        log.setNight((String) jComboBox4.getSelectedItem());
-        
-        log.setWhere((String) jComboBox5.getSelectedItem());
-        log.setWhen((String) jComboBox6.getSelectedItem());
-            
+
+        log.besttrait = ((String) jComboBox1.getSelectedItem());
+        log.worsttrait = ((String) jComboBox2.getSelectedItem());
+        log.food = ((String) jComboBox3.getSelectedItem());
+        log.night = ((String) jComboBox4.getSelectedItem());
+        log.where = ((String) jComboBox5.getSelectedItem());
+        log.when = ((String) jComboBox6.getSelectedItem());
+
+        if((!jCheckBox1.isSelected() && !jCheckBox2.isSelected() && !jCheckBox3.isSelected() && !jCheckBox4.isSelected()) || (!jCheckBox5.isSelected() && !jCheckBox6.isSelected() && !jCheckBox7.isSelected() && !jCheckBox8.isSelected()) || (!jCheckBox9.isSelected() && !jCheckBox10.isSelected() && !jCheckBox11.isSelected()));
+        //Store persons information in a text  file
         log.person();
+        people = alg.arraypeople();
+        // alg.arraypeople();
+        // create integer comparison to other users in a text file
+       String[] cutePuppies = compare();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
+     /**
+     * Takes information of person who just did the quiz
+     * compares answers to answers of other users
+     * Keeps count of personality scores and then
+     * stores the score of each person in a text file
+     * 
+     */
+    public String[] compare() {
+
+        // create an int array for everyones score
+        int[] compareint = new int[alg.lastposition() + 1];
+        for (int g = 0; g < compareint.length; g++) {
+            compareint[g] = 0;
+        }
+
+        // compare every answer with every person and calculate a score
+        for (int x = 0; x < (people.length - 1); x++) {
+
+//            if (people[alg.lastposition()].besttrait.equals(people[x].besttrait)) {
+//                compareint[x]++;
+//            }
+            if (people[alg.lastposition()].worsttrait.equals(people[x].worsttrait)) {
+                compareint[x]++;
+            }
+            if (people[alg.lastposition()].food.equals(people[x].food)) {
+                compareint[x]++;
+            }
+            if (people[alg.lastposition()].read.equals(people[x].read)) {
+                compareint[x]++;
+            }
+            if (people[alg.lastposition()].vaca.equals(people[x].vaca)) {
+                compareint[x]++;
+            }
+            if (people[alg.lastposition()].sport.equals(people[x].sport)) {
+                compareint[x]++;
+            }
+            if (people[alg.lastposition()].night.equals(people[x].night)) {
+                compareint[x]++;
+            }
+            if (people[alg.lastposition()].where.equals(people[x].where)) {
+                compareint[x] = compareint[x] + 2;
+            }
+            if (people[alg.lastposition()].when.equals(people[x].when)) {
+                compareint[x]++;
+            }
+
+        }
+
+        // create a text file  to store score information and matches
+        File matches = new File("personalitymatch.txt");
+        // create a delimiter
+        String d = ",";
+        
+        // write every match and score into the text file
+        for (int x = 0; x < (people.length - 1); x++) {
+            
+            try {
+                //create new print writer
+                pw = new PrintWriter(new FileWriter(matches, true));
+
+            } catch (FileNotFoundException ex) {
+                System.out.println(ex.toString());
+            } catch (IOException ex) {
+                Logger.getLogger(PersonalityQuiz.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            //write matching info to text file
+            pw.println(people[alg.lastposition()].user + d + people[x].user + d + compareint[x]);
+            //close printwriter     
+        }
+        pw.close();
+        
+        String user = null;
+         // where we are in the file
+         int here = 0;
+         // The file of data about the users (this includes the SID, studentID,
+        //gender, grade, the gender(s) you are looking for and the grade(s) you are looking for
+          File info = new File ("personlitymatch.txt");
+          int length = findLength(info);
+          Scanner s = null;
+          String [] cuddlything = new String[length];
+        try {            
+            s = new Scanner (info);
+            // While you have not reached the end of the file
+            while (s.hasNextLine()){             
+            // Store the line in the user var
+            user = s.nextLine();
+            // increase here by 1
+            
+            // Split the string into an array 
+            String[] userInfo = user.split(","); 
+           cuddlything[here] = userInfo[1] + d + userInfo[2];
+            // if the SID matches the one in the file
+           here++;
+          
+            }
+            
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+    }
+ return cuddlything;
+    }
+    /**
+     * This method is used to find the length of a file
+     *
+     * @ param obj - File (the file you want to find the length of
+     * @ return - int (the length of the file)
+     */
+    private int findLength(File x){
+        // create an int var to store the length of the file
+        int length = 0;
+        Scanner s = null;
+        try {            
+            s = new Scanner (x);
+            // While you have not reached the end of the file
+            while (s.hasNextLine()){
+            // move to next line
+            s.nextLine();
+            // increase length by 1
+            length++;
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(General.class.getName()).log(Level.SEVERE, null, ex);
+    }
+        // return length of the file
+        return length;
+    }
+    
      /**
      * @param args the command line arguments
      */

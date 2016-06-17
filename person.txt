@@ -1,3 +1,10 @@
 234809238,honesty,lazy,soccer,non-fiction,relaxation,Italian,night owl,fdgv,cxv,dfg
-
 234809238,persistence,lazy,tennis,adventure,relaxation,Italian,night owl,fgnnfg,fgb,fg
+234780928,persistence,lazy,tennis,adventure,travelling,Chinese,early bird,afternoon,dinner
+234780928,organization,dependant,soccer,adventure,travelling,Mexican,night owl,morning,movies
+234780928,honesty,lazy,soccer,non-fiction,relaxation,Italian,night owl,morning,movies
+234780928,honesty,messy,tennis,adventure,travelling,Italian,night owl,morning,sport game
+234780928,honesty,lazy,soccer,adventure,relaxation,Italian,night owl,morning,movies
+234780928,honesty,lazy,soccer,adventure,travelling,Italian,night owl,morning,movies
+234780928,honesty,unorganization,basketball,non-fiction,travelling,Italian,early bird,morning,long walk
+234780928,honesty,lazy,tennis,non-fiction,travelling,Greek,early bird,afternoon,sport game
