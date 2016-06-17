@@ -17,7 +17,7 @@ import java.io.PrintWriter;
 public class Appearance {
 PrintWriter pw;
 File appearance = new File("appearance.txt");
-
+String userName;
 int bodyWeightPersonal;
 int bodyTypePersonal;
 int hairColPersonal;
@@ -28,8 +28,10 @@ int bodyTypePref;
 int hairColPref;
 int backgroundPref;
 int heightPref;
+AppearanceOutput output = new AppearanceOutput();
 
-public Appearance(int bodyWeightPersonal,int bodyTypePersonal,int hairColPersonal,int backgroundPersonal,int heightPersonal,int bodyWeightPref,int bodyTypePref,int hairColPref,int backgroundPref,int heightPref) throws IOException {
+public Appearance(String userName,int bodyWeightPersonal,int bodyTypePersonal,int hairColPersonal,int backgroundPersonal,int heightPersonal,int bodyWeightPref,int bodyTypePref,int hairColPref,int backgroundPref,int heightPref) throws IOException {
+this.userName = userName;
 this.bodyWeightPersonal = bodyWeightPersonal;
 this.bodyTypePersonal = bodyWeightPersonal;
 this.hairColPersonal = hairColPersonal;
@@ -40,13 +42,9 @@ this.bodyTypePref = bodyTypePref;
 this.hairColPref = hairColPref;
 this.backgroundPref =backgroundPref;
 this.heightPref = heightPref;   
-
-pw = new PrintWriter(new FileWriter(appearance, true));
- pw.println(bodyTypePersonal + "," + bodyWeightPersonal + "," + hairColPersonal + "," + backgroundPersonal + "," + heightPersonal + ";" + bodyTypePref + "," + bodyWeightPref + "," + hairColPref + "," + backgroundPref + "," + heightPref);
-        //close printwriter
-            pw.close();
-
-
+}
+public Appearance () {
+    
 }
     
 }
