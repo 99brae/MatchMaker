@@ -16,6 +16,8 @@ public class Results extends javax.swing.JFrame {
      */
     public Results() {
         initComponents();
+        // get info from array it will contain the user
+        
     }
 
     /**
@@ -27,18 +29,55 @@ public class Results extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        name = new javax.swing.JLabel();
+        name2 = new javax.swing.JLabel();
+        match2Name = new javax.swing.JLabel();
+        match2percent = new javax.swing.JLabel();
+        match3Name = new javax.swing.JLabel();
+        match3percent = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        name.setFont(new java.awt.Font("Franklin Gothic Medium", 2, 48)); // NOI18N
+        name.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(name);
+        name.setBounds(260, 90, 150, 60);
+
+        name2.setFont(new java.awt.Font("Franklin Gothic Medium", 2, 48)); // NOI18N
+        getContentPane().add(name2);
+        name2.setBounds(260, 100, 360, 50);
+
+        match2Name.setFont(new java.awt.Font("Vijaya", 0, 36)); // NOI18N
+        match2Name.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(match2Name);
+        match2Name.setBounds(270, 410, 400, 40);
+
+        match2percent.setFont(new java.awt.Font("Vijaya", 0, 36)); // NOI18N
+        match2percent.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(match2percent);
+        match2percent.setBounds(730, 410, 70, 40);
+
+        match3Name.setFont(new java.awt.Font("Vijaya", 0, 36)); // NOI18N
+        match3Name.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(match3Name);
+        match3Name.setBounds(270, 530, 400, 30);
+
+        match3percent.setFont(new java.awt.Font("Vijaya", 0, 36)); // NOI18N
+        match3percent.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(match3percent);
+        match3percent.setBounds(730, 530, 70, 30);
+
+        jButton1.setFont(new java.awt.Font("Vijaya", 0, 36)); // NOI18N
+        jButton1.setText("Finished");
+        getContentPane().add(jButton1);
+        jButton1.setBounds(810, 620, 180, 70);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matchmakerfinal/Matches.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 1024, 724);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +118,13 @@ public class Results extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel match2Name;
+    private javax.swing.JLabel match2percent;
+    private javax.swing.JLabel match3Name;
+    private javax.swing.JLabel match3percent;
+    private javax.swing.JLabel name;
+    private javax.swing.JLabel name2;
     // End of variables declaration//GEN-END:variables
 }
