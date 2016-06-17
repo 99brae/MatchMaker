@@ -6,7 +6,10 @@
 package matchmakerfinal;
 
 import java.awt.Color;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
@@ -18,16 +21,16 @@ import javax.swing.JOptionPane;
  */
 public class AppearanceQuiz extends javax.swing.JFrame {
 
-    int bodyTypePref;
-    int bodyTypePersonal;
-    int hairColPref;
-    int hairColPersonal;
-    int heightPref;
-    int heightPersonal;
-    int backgroundPersonal;
-    int backgroundPref;
-    int bodyWeightPersonal;
-    int bodyWeightPref;
+    public static int bodyTypePref;
+    public static int bodyTypePersonal;
+    public static int hairColPref;
+    public static int hairColPersonal;
+    public static int heightPref;
+    public static int heightPersonal;
+    public static int backgroundPersonal;
+    public static int backgroundPref;
+    public static int bodyWeightPersonal;
+    public static int bodyWeightPref;
 
     /**
      * Creates new form AppearanceQuiz
@@ -84,19 +87,21 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 //        hairColourPersonal5.setBorderPainted(false);
 
     }
-     private void notSelected(JButton button){
+
+    private void notSelected(JButton button) {
         // change button colours
         button.setBackground(Color.WHITE);
         button.setForeground(Color.BLACK);
     }
-    
+
     /**
-     * This method is used to set the button colouration to that of a pressed button
+     * This method is used to set the button colouration to that of a pressed
+     * button
      *
      * @ param obj - JButton (the button that is pressed)
      * @ return - void
      */
-    private void selected(JButton button){
+    private void selected(JButton button) {
         // change button colours
         button.setBackground(Color.BLACK);
         button.setForeground(Color.GRAY);
@@ -179,7 +184,6 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1108, 733));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -548,7 +552,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Appearance Test");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(170, 40, 488, 23);
+        jLabel6.setBounds(170, 30, 488, 23);
 
         jLabel7.setBackground(new java.awt.Color(255, 251, 251));
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -956,7 +960,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         notSelected(bodyTypePersonal4);
         notSelected(bodyTypePersonal5);
         selected(bodyTypePersonal1);
-       
+
 
     }//GEN-LAST:event_bodyTypePersonal1ActionPerformed
 
@@ -1057,12 +1061,12 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         notSelected(hairColourPersonal3);
         notSelected(hairColourPersonal5);
         selected(hairColourPersonal4);
-        
+
     }//GEN-LAST:event_hairColourPersonal4ActionPerformed
 
     private void hairColourPersonal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPersonal2ActionPerformed
         hairColPersonal = 2;
-         notSelected(hairColourPersonal1);
+        notSelected(hairColourPersonal1);
         notSelected(hairColourPersonal5);
         notSelected(hairColourPersonal3);
         notSelected(hairColourPersonal4);
@@ -1071,7 +1075,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void hairColourPersonal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPersonal1ActionPerformed
         hairColPersonal = 1;
-         notSelected(hairColourPersonal5);
+        notSelected(hairColourPersonal5);
         notSelected(hairColourPersonal2);
         notSelected(hairColourPersonal3);
         notSelected(hairColourPersonal4);
@@ -1080,7 +1084,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void hairColourPersonal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPersonal3ActionPerformed
         hairColPersonal = 3;
-         notSelected(hairColourPersonal1);
+        notSelected(hairColourPersonal1);
         notSelected(hairColourPersonal2);
         notSelected(hairColourPersonal5);
         notSelected(hairColourPersonal4);
@@ -1089,7 +1093,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void backgroundPersonal5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal5ActionPerformed
         backgroundPersonal = 5;
-          notSelected(backgroundPersonal1);
+        notSelected(backgroundPersonal1);
         notSelected(backgroundPersonal2);
         notSelected(backgroundPersonal3);
         notSelected(backgroundPersonal4);
@@ -1116,7 +1120,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void backgroundPersonal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal1ActionPerformed
         backgroundPersonal = 1;
-          notSelected(backgroundPersonal5);
+        notSelected(backgroundPersonal5);
         notSelected(backgroundPersonal2);
         notSelected(backgroundPersonal3);
         notSelected(backgroundPersonal4);
@@ -1125,7 +1129,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void backgroundPersonal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPersonal3ActionPerformed
         backgroundPersonal = 3;
-          notSelected(backgroundPersonal1);
+        notSelected(backgroundPersonal1);
         notSelected(backgroundPersonal2);
         notSelected(backgroundPersonal5);
         notSelected(backgroundPersonal4);
@@ -1148,7 +1152,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         notSelected(bodyWeightPersonal3);
         notSelected(bodyWeightPersonal5);
         selected(bodyWeightPersonal4);
-       
+
     }//GEN-LAST:event_bodyWeightPersonal4ActionPerformed
 
     private void bodyWeightPersonal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPersonal2ActionPerformed
@@ -1186,12 +1190,22 @@ public class AppearanceQuiz extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Please ensure all field are filled in correctly", "Registration", JOptionPane.PLAIN_MESSAGE);
         } else {
             try {
-                Appearance appearance = new Appearance(bodyTypePersonal, bodyWeightPersonal, hairColPersonal, backgroundPersonal, heightPersonal, bodyTypePref, bodyWeightPref, hairColPref, backgroundPref, heightPref);
+                Appearance appearance = new Appearance(LogIn.fileSID, bodyTypePersonal, bodyWeightPersonal, hairColPersonal, backgroundPersonal, heightPersonal, bodyTypePref, bodyWeightPref, hairColPref, backgroundPref, heightPref);
             } catch (IOException ex) {
                 Logger.getLogger(AppearanceQuiz.class.getName()).log(Level.SEVERE, null, ex);
             }
-        //close printwriter);
-          new Menu().setVisible(true);
+            PrintWriter pw = null;
+            File appearance = new File("appearance.txt");
+            try {
+                pw = new PrintWriter(new FileWriter(appearance, true));
+            } catch (IOException ex) {
+                System.out.println("bruh we got a problem wit da printwriter");
+            }
+            pw.println(LogIn.fileSID + "," + bodyTypePersonal + "," + bodyWeightPersonal + "," + hairColPersonal + "," + backgroundPersonal + "," + heightPersonal + ";" + bodyTypePref + "," + bodyWeightPref + "," + hairColPref + "," + backgroundPref + "," + heightPref);
+            //close printwriter
+            pw.close();
+            //close printwriter);
+            new Menu().setVisible(true);
         }
 
 
@@ -1199,12 +1213,12 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void backgroundPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundPref5ActionPerformed
         backgroundPref = 5;
-         notSelected(backgroundPref1);
+        notSelected(backgroundPref1);
         notSelected(backgroundPref2);
         notSelected(backgroundPref3);
         notSelected(backgroundPref4);
         selected(backgroundPref5);
-       
+
     }//GEN-LAST:event_backgroundPref5ActionPerformed
 
     private void hairColourPref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hairColourPref3ActionPerformed
@@ -1290,7 +1304,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void bodyTypePref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref5ActionPerformed
         bodyTypePref = 5;
-         notSelected(bodyTypePref1);
+        notSelected(bodyTypePref1);
         notSelected(bodyTypePref3);
         notSelected(bodyTypePref4);
         notSelected(bodyTypePref2);
@@ -1304,7 +1318,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         notSelected(bodyWeightPref4);
         notSelected(bodyWeightPref2);
         selected(bodyWeightPref5);
-        
+
     }//GEN-LAST:event_bodyWeightPref5ActionPerformed
 
     private void bodyTypePref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref2ActionPerformed
@@ -1318,7 +1332,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void bodyTypePref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref1ActionPerformed
         bodyTypePref = 1;
-         notSelected(bodyTypePref2);
+        notSelected(bodyTypePref2);
         notSelected(bodyTypePref3);
         notSelected(bodyTypePref4);
         notSelected(bodyTypePref5);
@@ -1327,7 +1341,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void bodyTypePref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref4ActionPerformed
         bodyTypePref = 4;
-         notSelected(bodyTypePref1);
+        notSelected(bodyTypePref1);
         notSelected(bodyTypePref3);
         notSelected(bodyTypePref2);
         notSelected(bodyTypePref5);
@@ -1336,7 +1350,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void bodyTypePref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyTypePref3ActionPerformed
         bodyTypePref = 3;
-         notSelected(bodyTypePref1);
+        notSelected(bodyTypePref1);
         notSelected(bodyTypePref2);
         notSelected(bodyTypePref4);
         notSelected(bodyTypePref5);
@@ -1345,7 +1359,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void HeightPref5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref5ActionPerformed
         heightPref = 5;
-         notSelected(HeightPref1);
+        notSelected(HeightPref1);
         notSelected(HeightPref3);
         notSelected(HeightPref4);
         notSelected(HeightPref2);
@@ -1363,7 +1377,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void HeightPref4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref4ActionPerformed
         heightPref = 4;
-         notSelected(HeightPref1);
+        notSelected(HeightPref1);
         notSelected(HeightPref3);
         notSelected(HeightPref2);
         notSelected(HeightPref5);
@@ -1372,7 +1386,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void bodyWeightPref2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref2ActionPerformed
         bodyWeightPref = 2;
-         notSelected(bodyWeightPref1);
+        notSelected(bodyWeightPref1);
         notSelected(bodyWeightPref3);
         notSelected(bodyWeightPref4);
         notSelected(bodyWeightPref5);
@@ -1381,7 +1395,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void HeightPref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref3ActionPerformed
         heightPref = 3;
-         notSelected(HeightPref1);
+        notSelected(HeightPref1);
         notSelected(HeightPref2);
         notSelected(HeightPref4);
         notSelected(HeightPref5);
@@ -1390,7 +1404,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void bodyWeightPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref1ActionPerformed
         bodyWeightPref = 1;
-         notSelected(bodyWeightPref4);
+        notSelected(bodyWeightPref4);
         notSelected(bodyWeightPref3);
         notSelected(bodyWeightPref2);
         notSelected(bodyWeightPref5);
@@ -1404,11 +1418,11 @@ public class AppearanceQuiz extends javax.swing.JFrame {
         notSelected(hairColourPref3);
         notSelected(hairColourPref4);
         selected(hairColourPref5);
-        
+
     }//GEN-LAST:event_hairColourPref5ActionPerformed
 
     private void bodyWeightPref3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bodyWeightPref3ActionPerformed
-        bodyWeightPref = 3; 
+        bodyWeightPref = 3;
         notSelected(bodyWeightPref1);
         notSelected(bodyWeightPref5);
         notSelected(bodyWeightPref2);
@@ -1418,7 +1432,7 @@ public class AppearanceQuiz extends javax.swing.JFrame {
 
     private void HeightPref1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightPref1ActionPerformed
         heightPref = 1;
-         notSelected(HeightPref2);
+        notSelected(HeightPref2);
         notSelected(HeightPref3);
         notSelected(HeightPref4);
         notSelected(HeightPref5);
