@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author 070169263
+ * @author Nijat
  */
 public class person {
     
@@ -37,33 +37,12 @@ public class person {
     public String night;
     public String when;
     public String where;
-    
-//    int toCompare;
-//    
-//    public void person(String line){
-//        try {
-//            Scanner s = new Scanner(person);
-//        } catch (FileNotFoundException ex) {
-//            Logger.getLogger(person.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//            
-//        String[] stuff = line.split(",");
-//        user = stuff[0];
-//        besttrait = stuff[1];
-//        worsttrait = stuff[2];
-//        sport = stuff[3];
-//        read = stuff[4];
-//        vaca = stuff[5];
-//        food = stuff[6];
-//        night = stuff[7];
-//       
-//        
-//    }
-//    
+        
     
     /**
      * Adds a new person to the text file 
      * with personality info
+     * Nijat
      */
     public void person() {
         

@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author 070169263
+ * @author Nijat
  */
 public class PersonalityQuiz extends javax.swing.JPanel {
 
@@ -368,6 +368,7 @@ public class PersonalityQuiz extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        //nijat
       // declare variables based on information provided
         if (jCheckBox1.isSelected()) {
             log.sport = ("basketball");
@@ -423,6 +424,11 @@ public class PersonalityQuiz extends javax.swing.JPanel {
         // alg.arraypeople();
         // create integer comparison to other users in a text file
        String[] cutePuppies = compare();
+       File matches = new File("personalitymatch.txt");
+       for (int i = 0; i < findLength(matches);i++){
+           System.out.println(cutePuppies[i]);
+       }
+               
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -431,7 +437,7 @@ public class PersonalityQuiz extends javax.swing.JPanel {
      * compares answers to answers of other users
      * Keeps count of personality scores and then
      * stores the score of each person in a text file
-     * 
+     * - Nijat
      */
     public String[] compare() {
 
@@ -444,9 +450,9 @@ public class PersonalityQuiz extends javax.swing.JPanel {
         // compare every answer with every person and calculate a score
         for (int x = 0; x < (people.length - 1); x++) {
 
-//            if (people[alg.lastposition()].besttrait.equals(people[x].besttrait)) {
-//                compareint[x]++;
-//            }
+            if (people[alg.lastposition()].besttrait.equals(people[x].besttrait)) {
+                compareint[x]++;
+            }
             if (people[alg.lastposition()].worsttrait.equals(people[x].worsttrait)) {
                 compareint[x]++;
             }
@@ -468,8 +474,14 @@ public class PersonalityQuiz extends javax.swing.JPanel {
             if (people[alg.lastposition()].where.equals(people[x].where)) {
                 compareint[x] = compareint[x] + 2;
             }
+            else{
+                compareint[x]--;
+            }
             if (people[alg.lastposition()].when.equals(people[x].when)) {
-                compareint[x]++;
+                compareint[x] = compareint[x] + 2;
+            }
+            else{
+                compareint[x]--;
             }
 
         }
@@ -497,12 +509,14 @@ public class PersonalityQuiz extends javax.swing.JPanel {
         }
         pw.close();
         
+        
+        //
         String user = null;
          // where we are in the file
          int here = 0;
          // The file of data about the users (this includes the SID, studentID,
         //gender, grade, the gender(s) you are looking for and the grade(s) you are looking for
-          File info = new File ("personlitymatch.txt");
+          File info = new File ("personalitymatch.txt");
           int length = findLength(info);
           Scanner s = null;
           String [] cuddlything = new String[length];

@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author 070169263
+ * @author Nijat
  */
 public class algorithm {
      
@@ -75,25 +75,18 @@ public class algorithm {
 
         }
 
-        //  return person
+        //  return array  of people
         return oneperson;
 
     }
 
-//    public void compare() {
-//        int x;
-//        for (x = 0; x < arraypeople().length; x++) {
-//            arraypeople().
-//            
-//        }
-//
-//    }
 
     /**
      * Searches through personality text file
      * and finds the last user in the file
      * for comparing results
      * @return return position of last user
+     * - Nijat
      */
     public int lastposition() {
 
@@ -115,6 +108,7 @@ public class algorithm {
             s.nextLine();
         }
 
+        // return position of last person who took quiz
         return i-1;
     }
 }

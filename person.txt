@@ -8,3 +8,6 @@
 234780928,honesty,lazy,soccer,adventure,travelling,Italian,night owl,morning,movies
 234780928,honesty,unorganization,basketball,non-fiction,travelling,Italian,early bird,morning,long walk
 234780928,honesty,lazy,tennis,non-fiction,travelling,Greek,early bird,afternoon,sport game
+234780928,honesty,lazy,soccer,manga,relaxation,Italian,early bird,morning,movies
+234780928,honesty,lazy,soccer,adventure,travelling,Italian,night owl,morning,movies
+234780928,honesty,lazy,tennis,adventure,travelling,Italian,night owl,morning,long walk

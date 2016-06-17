@@ -7,7 +7,7 @@ package matchmakerfinal;
 
 /**
  *
- * @author 070169263
+ * @author nijat
  */
 public class personality extends javax.swing.JFrame {
 
