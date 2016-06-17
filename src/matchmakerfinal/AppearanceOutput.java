@@ -14,12 +14,11 @@ import static matchmakerfinal.LogIn.fileSID;
  */
 public class AppearanceOutput {
 int score;
-String fileSID;
+String userName;
 
-
-AppearanceOutput(int score) {
+AppearanceOutput(int score, String userName) {
 this.score = score;   
-this.fileSID = LogIn.fileSID;
+this.userName = userName ;
 }
 AppearanceOutput(){
     

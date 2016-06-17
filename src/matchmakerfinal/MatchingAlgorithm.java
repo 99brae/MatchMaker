@@ -23,7 +23,7 @@ public class MatchingAlgorithm {
     Appearance[] appearances;
     AppearanceOutput[] output = new AppearanceOutput[appearances.length];
 
-    public void ewwRelationships() {
+    public AppearanceOutput[] ewwRelationships() {
         try {
             s = new Scanner(file); //f is a file
         } catch (FileNotFoundException ex) {
@@ -42,7 +42,12 @@ public class MatchingAlgorithm {
         for (i = 0; 1 > appearances.length; i++) {
 
             appearances[i] = new Appearance();
+             try {
+                appearances[i].userName = s.next();
 
+            } catch (InputMismatchException e) {
+                appearances[i].bodyTypePersonal = 0;
+            }
             try {
                 appearances[i].bodyTypePersonal = s.nextInt();
 
@@ -100,7 +105,7 @@ public class MatchingAlgorithm {
         }
 
         for (i = 0; 1 > appearances.length; i++) {
-
+            output[i].userName = LogIn.fileSID;
             if (AppearanceQuiz.bodyTypePref == appearances[i].bodyTypePersonal || AppearanceQuiz.bodyTypePersonal == appearances[i].bodyTypePref) {
                 output[i].score++;
             }
@@ -118,10 +123,12 @@ public class MatchingAlgorithm {
             if (AppearanceQuiz.heightPref == appearances[i].heightPersonal || AppearanceQuiz.heightPersonal == appearances[i].heightPref) {
                 output[i].score++;
             }
+            
+            
 
         }
         
         
-
+    return output;
     }
 }

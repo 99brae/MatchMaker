@@ -31,7 +31,7 @@ int heightPref;
 AppearanceOutput output = new AppearanceOutput();
 
 public Appearance(String userName,int bodyWeightPersonal,int bodyTypePersonal,int hairColPersonal,int backgroundPersonal,int heightPersonal,int bodyWeightPref,int bodyTypePref,int hairColPref,int backgroundPref,int heightPref) throws IOException {
-this.userName = userName;
+this.userName = LogIn.fileSID;
 this.bodyWeightPersonal = bodyWeightPersonal;
 this.bodyTypePersonal = bodyWeightPersonal;
 this.hairColPersonal = hairColPersonal;
