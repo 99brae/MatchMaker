@@ -126,7 +126,6 @@ public class Menu extends javax.swing.JFrame {
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton calculate;
     private javax.swing.JButton genInfoQuiz;

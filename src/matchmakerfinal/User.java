@@ -18,9 +18,8 @@ public class User {
     public int weightFactor;
     public String[] LFGender;
     public String[] LFGrade;
-    public Object Looks;
-    public Object personlity;
-    public Object user;
+    public String studentID;
+    
     
     public User(String info) {
         String[] user = info.split(",");
@@ -30,13 +29,8 @@ public class User {
         grade = user[3];
         weightFactor = Integer.parseInt(user[4]);
         LFGender = user[4].split(";");
-        LFGrade = user[5].split(";");         
-        
-    }    public User(Object u, Object l, Object p) {
-        // read in each object and store together, each object should be sorted and connect based on user ID
-        user = u;
-         Looks = l;
-    personlity = p;
+        LFGrade = user[5].split(";");
+        studentID = user[6];
         
     }
     
